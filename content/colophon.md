@@ -10,7 +10,7 @@ _Snowfall animation adapted from a demo by [Alvaro Montoro](https://community.co
 Principles
 ----------
 
-Design choices and the overall philosophy of the site are guided by the following principles.
+I find it easy to make design choices when I've already chosen a set of constraints/rules to adhere to. For this version of my site, I chose the following principles:
 
 ### Speed
 
@@ -51,11 +51,8 @@ The internet has gotten faster, but average page load times have [stayed the sam
 
 Thus, the majority of it's load time is taken up by latency, not bandwidth. That, in turn, is minimised using Netlify's global CDN and prefetching/caching.
 
-### Fun
 
-The site has no obligation to make sense, I can add whatever I like in the manner that I feel is most amusing. Dark mode switches will hide in pictures and headers, snowflakes will float across the screen. You can't stop me, it's my site.
-
-### Quality
+### Thoughtfulness
 
 There are annoying bugs that must be dealt with, quality is choosing to care about them.
 
@@ -65,16 +62,11 @@ There are annoying bugs that must be dealt with, quality is choosing to care abo
 
 Simplicity does not imply minimalism. Nor does it necessarily involve strict rules like "No Javascript or animations!"
 
-The real goal is to have the site be as easy as possible to maintain, modify, and add to. This involved picking a simple folder heirarchy, basic color palette, two stylesheets, and zero external dependencies.
+The real goal is to have the site be as easy as possible to maintain, modify, and add to. Pick a simple set of guiding rules, and stick by them whenever possible. In my case, this involved picking a single-layer folder heirarchy, basic color palette, one stylesheet, and zero external dependencies.
 
-### Consistency
 
-Pick a simple set of guiding rules, and stick by them whenever possible. In this case, I chose a particular design pallete, and try to maintain it across the site. It isn't easy to resist the desire to have a site as cool as [aaronzlewis.com](https://aaronzlewis.com/), y'know.
 
-Each page attempts to maintain consistent formatting (center column with menus on one or both sides), design patterns (b&w boxes and tables, similar border-radius) and structure (title and sub-titles).
-
-Content
--------
+## Content
 
 I hate doing things that I know I won't care about in a year (or more) from now. So the idea of a [long site](https://gwern.net/About#long-site) was an obviously appealing one. [This post](https://www.cyberpatterns.xyz/p/twittercapital) is the closest you can get to defining the _opposite_ of what I want to do.
 
@@ -84,7 +76,7 @@ I hate doing things that I know I won't care about in a year (or more) from now.
  <thead>
  		<tr>
 
-<th scope="col"> Page </th>
+<th scope="col"> Page/Section </th>
 <th scope="col">Purpose</th>
      
 </tr>
@@ -97,12 +89,12 @@ I hate doing things that I know I won't care about in a year (or more) from now.
 		      <td>There are certain topics that I've been asked to talk or write about before for. Posts listed on this page were written mainly for utilitarian purposes (how to do X). </td>
 	    </tr>
 	    <tr>
-		      <td><a href="bad-advice.html"> Bad Advice </a></td>
-		      <td>Things that I have done that worked out well, but would usually be considered terrible advice.</td>
-    	</tr>
-    	<tr>
 		      <td><a href="lists.html"> Lists & Highlights </a></td>
 		      <td>Primarily curation.</td>
+    	</tr>
+	    <tr>
+		      <td><a href="bad-advice.html"> Bad Advice </a></td>
+		      <td>Things that I have done that worked out well, but would usually be considered terrible advice.</td>
     	</tr>
     	<tr>
 		      <td><a href="essays.html"> Essays </a></td>

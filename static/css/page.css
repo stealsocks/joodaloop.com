@@ -208,9 +208,9 @@
       }
 
       nav#TableOfContents ul ul{
-        width: 100%;
+        width: 90%;
          list-style-type: none;
-          margin: 0px 0px 0px 0px;
+          margin: 0px 0px 0px 30px;
           padding: 0px;
           font-weight: 200;
       }
@@ -282,13 +282,13 @@
 
       h2{ 
       line-height: 1.2em;
-      margin: 3.2rem 0px -0.3em 0px;
+      margin: 3.2rem 0px -0.4em 0px;
       font-size: 2em;
       padding: 0px;
      }
 
      h3{
-      margin: 2.5rem 0px -0.2em 0px;
+      margin: 2.7rem 0px -0.5em 0px;
       font-size: 1.4em;
       padding: 0px;
       font-weight: 600;
@@ -529,5 +529,10 @@
         td, th{
            word-break: break-word;
            padding: 10px;
+           font-size: 14px;
+        }
+
+        th{
+          font-size: 17px;
         }
       }
