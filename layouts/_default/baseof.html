@@ -11,6 +11,8 @@
   <link rel="icon" type="image/png" sizes="16x16"  href="/photos/card.jpg"> 
 
   <link rel="stylesheet" href="/css/page.css">
+  <link rel="stylesheet" href="/css/snow.css">
+
 
   <style>
 
@@ -44,6 +46,12 @@
           {{ block "main" . }}
 
           {{ end }}
-         
+         <script>
+                document.body.innerHTML += `<div id="snowbg"></div>`
+
+                for(i=0; i<(screen.width/40 + 5); i++){
+                     document.getElementById("snowbg").innerHTML += `<div class="snowflake"></div>`
+                 }
+         </script>
   </body>
 </html>
