@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+  
+  <meta charset="utf-8">
+  <title> joodaloop </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180"  href="/photos/card.jpg"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="/photos/card.jpg"> 
+  <link rel="icon" type="image/png" sizes="16x16"  href="/photos/card.jpg"> 
+
+  <link rel="stylesheet" href="/css/page.css">
+
+  <style>
+
+
+.right {
+    animation: fadeInAnimation ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.holder {
+    animation: fadeInAnimation ease-in 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+  </style>
+</head>
+
+  <!-- {{ partial "head.html" . }} -->
+  <body>
+          {{ block "main" . }}
+
+          {{ end }}
+         
+  </body>
+</html>

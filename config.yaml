@@ -1,4 +1,4 @@
-baseURL: https://example.com
+baseURL: "/"
 languageCode: en-us
 defaultContentLanguage: en
 title: Cupper
@@ -7,11 +7,11 @@ googleAnalytics: UA-123456789-1
 disqusShortname: yourdiscussshortname
 enableGitInfo: true
 
-taxonomies:
-  tag: tags
+# taxonomies:
+#   tag: tags
 
-permalinks:
-  post: /:filename/
+# permalinks:
+#   post: /:filename/
 
 imaging:
   quality: 99
@@ -42,23 +42,23 @@ params:
     issueTerm: title
     theme: github-light
 
-menu:
-  nav:
-    - name: Home
-      url: /
-      weight: 1
-    - name: Blog
-      url: /post/
-      weight: 2
-    - name: Tags
-      url: /tags/
-      weight: 3
-    - name: About
-      url: /about/
-      weight: 4
-    - name: RSS
-      url: /index.xml
-      weight: 5
+# menu:
+#   nav:
+#     - name: Home
+#       url: /
+#       weight: 1
+#     - name: Blog
+#       url: /post/
+#       weight: 2
+#     - name: Tags
+#       url: /tags/
+#       weight: 3
+#     - name: About
+#       url: /about/
+#       weight: 4
+#     - name: RSS
+#       url: /index.xml
+#       weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark
@@ -88,5 +88,5 @@ markup:
     style: monokai
     tabWidth: 4
   tableOfContents:
-    endLevel: 6
+    endLevel: 2
     startLevel: 2

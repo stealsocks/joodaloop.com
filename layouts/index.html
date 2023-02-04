@@ -1,0 +1,528 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <style>
+      @font-face {
+        font-family: 'Petrona';
+        font-style: normal;
+        src: url('fonts/Petrona.woff2') format('woff2');
+         font-display: block;
+         font-style: normal;
+      }
+
+      /*@font-face {
+        font-family: 'Petrona-Italic';
+        font-style: normal;
+        src: url('fonts/Petrona-Italic.woff2') format('woff2');
+         font-display: block;
+         font-style: italic;
+      }*/
+
+      /*.ptserif{
+        font-family: "PT Serif";
+      }*/
+
+/*    
+      .palatino{
+        font-family: "Palatino"
+      }*/
+
+      body {
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        opacity: 1;
+        transition: opacity 1.5s ease;
+      }
+
+      body.fade{
+        opacity: 0;
+      }
+
+      html{
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+      }
+
+      h1{
+        font-family: 'Petrona';
+        text-align: center;
+        font-size: 2em;
+        padding: 0px;
+        margin: 0px 0px 2em 0px;
+        font-weight: 200;
+      }
+
+      h2{
+        padding: 0px;
+        margin: 10px 0px;
+      }
+
+      /*span{
+        font-family: "Petrona";
+        font-weight: 200;
+        font-size: 1rem;
+        margin: 0px;
+        text-align: center;
+        width: 100%;
+        padding: 0px 0px 50px 0px;
+        display: inline-block;
+      }
+
+      /*span > a{
+        color: black;
+        text-decoration: none;
+        margin: 10px 20px 10px 20px;
+        display: inline-block;
+
+      }*/
+
+      .half{
+        text-align: center;
+        width: 40%;
+        max-width: 26rem;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .whitespace{
+        width: 0rem;
+        margin: 0rem 4rem;
+        border-left: solid 1px lightgray;
+        padding: 30% 0%;
+        display: inline-block;
+      }
+      .section{
+        text-align: left;
+        margin: 10px 0%;
+        width: 90%;
+        display: inline-block;
+/*        border: solid 1px black; */
+      }
+
+      .item{
+        font-family: 'Petrona';
+        font-weight: 300;
+        padding: 7px 40px;
+        display: block;
+      }
+
+      .left-item{
+        font-family: 'Petrona';
+        padding: 7px 0px;
+        display: block;
+      }
+
+      main{
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+        margin-top: 70px;
+        height: fit-content;
+        font-family: 'Petrona';
+      }
+
+      a {
+        color: black;
+      }
+
+      a:hover {
+        color: black;
+      }
+
+      @media only screen and (max-width: 600px){
+
+        body{
+          font-size: 14px;
+          width: 100%;
+        }
+        
+        main{
+        width: 90%;
+        margin-left: 5%;
+      }
+
+      span{
+        width: 100%;
+        margin-left: 0%;
+      }
+
+      h1{
+        font-size: 1.6em;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      span{
+        padding-bottom: 0px;
+            }
+
+      span a{
+        font-size: 14px;
+        margin: 0px 10px;
+      }
+
+      .half{
+        text-align: center;
+        width: 90%;
+        margin: 0px 5%;
+        min-width: 0px;
+
+      }
+
+      .whitespace{
+        display: none;
+      }
+    }
+
+  </style>  
+
+  <style>
+
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+    }
+
+    .toc-list, .toc-list ol {
+      list-style-type: none;
+    }
+
+    .toc-list {
+      padding: 0;
+    }
+
+    .toc-list ol {
+      padding-inline-start: 40px;
+    }
+
+    .toc-list > li > a {
+      font-weight: bold;
+      margin-block-start: 1em;
+    }
+
+    .toc-list li > a {
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: auto max-content;
+        align-items: end;
+        margin: 0px;
+    }
+
+    .toc-list li > a > .title {
+        position: relative;
+        overflow: hidden;
+        font-weight: 300;
+        transition: color 0.3s ease;
+         margin: 10px 0px 10px 0px;
+/*         font-style: italic;*/
+    }
+
+    .toc-list li > a > .title:hover {
+/*      text-shadow: 0px 0px 2px grey;*/
+      color: grey;
+      transition: color 0.3s ease;
+    }
+
+    .toc-list li > a > .title:hover > .leaders{
+      color: black;
+    }
+
+    .toc-list li > a > .title.bold {
+      font-weight: 800;
+    }
+
+    .toc-list li > a > .title.bold > .leaders {
+      font-weight: 200;
+    }
+
+    .toc-list li > a .leaders::after {
+        position: absolute;
+        padding-inline-start: .25ch;
+        content: " . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . ";
+        text-align: right;
+        pointer-events: none;
+    }
+
+    .toc-list li > a > .page {
+        min-width: 1ch;
+        font-variant-numeric: tabular-nums;
+        text-align: right;
+        margin: 5px -7px;
+        padding: 5px 7px;
+        border-radius: 50%;
+        z-index: 1;
+
+    }
+
+    .page:hover + .hidden, .page:active + .hidden{
+      opacity: 1;
+      max-height: 100px;
+      transition: max-height 0.6s linear, opacity 0.5s linear;
+      transition-delay: 0.3s;
+
+    }
+
+    .hidden{
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0px;
+      font-weight: 100;
+      font-size: 14px;
+      transition: max-height 0.6s ease-out, opacity 0.45s linear;
+      transition-delay: 0s, 0.1s;
+      line-height: 1.4em;
+      }
+
+    .hidden:after{
+      content: " ";
+      width: 100%;
+      height: 10px;
+      display: block;
+      line-height: 1.2em;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- <span> <a href="#" > music </a> 
+    <a href="#" class=hide> notebook </a> 
+    
+    
+
+    <a href="#"> bad advice </a>  
+    <a href="#" class=hide> colophon </a> 
+  </span>  -->
+
+<main>
+
+  <h1> <a style="text-decoration:none" href="colophon">joodaloop</a> </h1>
+<div class="half palatino">
+  
+
+  <div class=section>       
+    <ol class="toc-list" role="list">
+
+          <li>
+               <a href="#Introduction">
+                    <span class="title bold">Bad Advice<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                                    class="visually-hidden">Page&nbsp;</span>iii</span>
+                          <span class=hidden> You should definitely not do all these things that I've done.</span>
+               </a>
+
+                 <a href="#Introduction">
+                      <span class="title bold">Blogroll<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                                      class="visually-hidden">Page&nbsp;</span>vi</span>
+                 </a>
+
+                <a href="#Introduction">
+                      <span class="title bold">Plans & Ideas<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                                      class="visually-hidden">Page&nbsp;</span>vi</span>
+                 </a>
+
+        </li>
+    </ol>
+  </div>
+
+  <div class=section> 
+    <h2> Useful </h2>
+
+    <ol class="toc-list" role="list">
+
+          <li>
+             <ol role="list">
+
+                    <li>
+                  {{ range where (where .Site.RegularPages "Type" "useful") "File.Dir" "useful/" }}
+                       <a href="{{ .Permalink }}">
+                            <span class="title">{{.Title}}<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>
+                            5 </span>
+                            <span class=hidden> {{.Description}} </span>
+                        </a>
+                       {{ end }}  
+              </li>
+              </ol>
+            </li>
+          </ol>
+
+  </div>
+
+
+  <div class=section> 
+    <h2> Notes </h2>
+
+    <ol class="toc-list" role="list">
+
+          <li>
+             <ol role="list">
+
+                    <li>
+
+                       {{ range where (where .Site.RegularPages "Type" "note") "File.Dir" "notes/" }}
+
+                       <a href="{{ .Permalink }}">
+                            <span class="title">{{.Title}}<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>
+                            5 </span>
+                            <span class=hidden> {{.Description}} </span>
+                        </a>
+
+                       {{ end }}
+
+                 <a href="#Introduction-About-This-Book">
+                            <span class="title">Genomics<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>5</span>
+                </a>
+
+                <a href="#Introduction-About-This-Book">
+                            <span class="title">Design<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>5</span>
+                </a>
+              </li>
+           </ol>
+        </li>
+    </ol>
+
+  </div>
+
+
+  </div>
+
+  <div class=whitespace> </div>
+
+<div class="half palatino">
+
+  <div class=section> 
+    <h2> Projects </h2>
+
+    <ol class="toc-list" role="list">
+
+          <li>
+             <ol role="list">
+
+                    <li>
+                       {{ range where (where .Site.RegularPages "Type" "project") "File.Dir" "projects/" }}
+                       <a href="{{ .Permalink }}">
+                            <span class="title">{{.Title}}<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>
+                            5 </span>
+                            <span class=hidden> {{.Description}} </span>
+                        </a>
+                       {{ end }}
+              </li>
+           </ol>
+        </li>
+    </ol>
+
+  </div>
+
+  <div class="section">
+    <h2> Essays </h2>
+    <ol class="toc-list" role="list">
+
+          <li>
+             <ol role="list">
+
+                    <li>
+                        <a href="#Introduction-About-This-Book">
+                            <span class="title">The Problem of Too Much Money<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>
+                            ↗ </span>
+                            <span class=hidden> A talk about longevity in technology: can a person have 20 years of experience or five years, repeated four times?</span>
+                </a>
+
+                <a href="#Introduction-About-This-Book">
+                            <span class="title">What Do Your Ideas Want From You?<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>
+                            ↗ </span>
+                </a>
+
+                 <a href="#Introduction-About-This-Book">
+                            <span class="title">Form is Fake<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>↗</span>
+                </a>
+
+                 <a href="#Introduction-About-This-Book">
+                            <span class="title">Apologies as Signalling<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>↗</span>
+                </a>
+
+              </li>
+           </ol>
+        </li>
+
+
+    </ol>
+
+    <ol class="toc-list" role="list">
+
+          <li>
+
+            <a href="#Introduction">
+                      <span class="title bold">Colophon<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                                      class="visually-hidden">Page&nbsp;</span>vi</span>
+                 </a>
+              
+              <a href="#Introduction">
+                      <span class="title bold">Personal<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                                      class="visually-hidden">Page&nbsp;</span>ix</span>
+                 </a>
+
+            </li>
+      </ol>
+        </div>
+
+
+</div>
+
+</main>
+
+<script>
+    document.body.classList.add('fade');
+
+  document.addEventListener("DOMContentLoaded", () => {
+        window.setTimeout(function() {
+            document.body.classList.remove('fade');
+
+        }, 300);
+
+      })  
+  </script>
+</body>
+
+</html> 

@@ -1,0 +1,533 @@
+ @font-face {
+        font-family: 'Petrona';
+        font-style: normal;
+        src: url('/fonts/Petrona.woff2') format('woff2');
+         font-display: block;
+      }
+
+      html{
+          scroll-behavior: smooth !important;
+      }
+
+      
+      body {
+        font-size: 18px;
+        line-height: 1.4em;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        font-family: "Petrona";
+        overflow: hidden;
+        position: relative;
+        background: white;
+      }
+
+      .leftmost h2{
+        line-height: 1.2em;
+        margin: 0.7rem 0px;
+        font-size: 1.5em
+      }
+
+
+      .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(100%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+    }
+
+    .toc-list, .toc-list ol {
+      list-style-type: none;
+    }
+
+    .toc-list {
+      padding: 0;
+    }
+
+    .toc-list ol {
+      padding-inline-start: 40px;
+    }
+
+    .toc-list > li > a {
+      font-weight: bold;
+      margin-block-start: 1em;
+    }
+
+    .toc-list li > a {
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: auto max-content;
+        align-items: end;
+        margin: 0px;
+    }
+
+    .toc-list li > a > .title {
+        position: relative;
+        overflow: hidden;
+        font-weight: 300;
+        transition: color 0.3s ease;
+         margin: 5px 0px 5px 0px;
+         font-size: 17px;
+    }
+
+    .toc-list li > a > .title:hover {
+/*      text-shadow: 0px 0px 2px grey;*/
+      text-decoration: underline;
+    }
+
+    .toc-list li > a > .title:hover > .leaders{
+      color: black;
+    }
+
+    .toc-list li > a > .title.bold {
+      font-weight: 800;
+    }
+
+    .toc-list li > a > .title.bold > .leaders {
+      font-weight: 200;
+    }
+
+    .toc-list li > a .leaders::after {
+        position: absolute;
+        padding-inline-start: .25ch;
+        content: " . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . ";
+        text-align: right;
+        pointer-events: none;
+    }
+
+    .toc-list li > a > .page {
+        min-width: 1ch;
+        font-variant-numeric: tabular-nums;
+        text-align: right;
+        margin: 0px -7px;
+        padding: 5px 7px;
+        border-radius: 50%;
+        z-index: 1;
+      font-weight: 200;
+    }
+
+    .page:hover + .hidden, .page:active + .hidden{
+      opacity: 1;
+      max-height: 100px;
+      transition: max-height 0.6s linear, opacity 0.5s linear;
+      transition-delay: 0.2s;
+
+    }
+
+    .hidden{
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0px;
+      font-weight: 100;
+      font-size: 14px;
+      transition: max-height 0.6s ease-out, opacity 0.45s linear;
+      transition-delay: 0s, 0.1s;
+      line-height: 1.4em;
+      }
+
+    .hidden:after{
+      content: " ";
+      width: 100%;
+      height: 10px;
+      display: block;
+      line-height: 1.2em;
+    }
+
+
+
+    table{
+       table-layout: fixed;
+      width: 100%;
+    /*  border-collapse: collapse;*/
+    border-spacing: 0;
+      margin: 20px 0px;
+    }
+
+    thead th:nth-child(1) {
+      width: 38%;
+    }
+
+    tr{
+      transition: all 0.5s ease;
+    }
+
+    tr:hover{
+      background: #f5f5f5;
+    }
+
+    thead th:nth-child(2) {
+      width: 62%;
+    }
+
+    th{
+      background: inherit;
+      padding: 20px 20px;
+      font-size: 20px;
+      font-weight: 800;
+      border-bottom: 0.6px solid #bbb;
+
+    }
+
+    tr:hover th{
+      background: white;
+    }
+
+    td{
+      padding: 20px 20px;
+      vertical-align: top;
+      font-size: 16px;
+      line-height: 1.5em;
+      border-bottom: 0.6px solid #bbb;
+      font-weight: 200;
+    }
+
+    td a{
+      font-weight: 600;
+    }
+
+      nav#TableOfContents ul{
+        width: 100%;
+         list-style-type: none;
+          margin: 0px;
+          padding: 0px;
+        font-weight: 400;
+      }
+
+      #TableOfContents ul a:hover{
+        text-decoration: underline;
+
+      }
+
+      nav#TableOfContents ul ul{
+        width: 100%;
+         list-style-type: none;
+          margin: 0px 0px 0px 0px;
+          padding: 0px;
+          font-weight: 200;
+      }
+
+      nav#TableOfContents ul ul a:hover{
+         text-decoration-thickness: 1px;
+         text-underline-offset: 1.5px;
+      }
+
+      nav#TableOfContents ul li{
+          margin: 13px 0px;
+          padding: 0px;
+          font-size: 18px;
+      }
+
+
+      img{
+        width: 100%;
+        height: auto;
+        margin: 10px 0px;
+        border: solid 1px #bbb;
+      }
+
+       .fade {
+        opacity: 0 !important;
+        }
+
+      h1{
+        line-height: 1.3em;
+        font-weight: 900;
+        font-size: 3rem;
+        margin: 1rem 0px 2rem 0px;
+      }
+
+      .section{
+        margin: 2.3rem 0px;
+      }
+
+      .leftmost{
+        width: 14rem;
+        border-right: solid 1px #ddd;
+        height: calc( 100vh - 3rem);
+        margin: 0rem 0px;
+        display: inline-block;
+        position: relative;
+        padding: 2rem 2rem 1rem 2rem;
+        overflow: scroll;
+        scroll-behavior: auto;
+
+      }
+
+      .leftmost h1 {
+        text-align: center;
+        padding: 0px 0px;
+        margin: 0.3rem 0px 2.2rem 0px;
+        line-height: 1.2em;
+        font-size: 1.7rem;
+        font-weight: 200;
+/*        position: fixed;*/
+      }
+
+      h1 a, h1 a:hover{
+        text-decoration: none;
+      }
+
+      h2, h3{
+         scroll-margin-top: 1em
+      }
+
+      h2{ 
+      line-height: 1.2em;
+      margin: 3.2rem 0px -0.3em 0px;
+      font-size: 2em;
+      padding: 0px;
+     }
+
+     h3{
+      margin: 2.5rem 0px -0.2em 0px;
+      font-size: 1.4em;
+      padding: 0px;
+      font-weight: 600;
+     }
+
+      .left{
+        width: 14rem;
+/*        border-right: solid 1px lightgray;*/
+        height: calc( 100vh - 3rem);
+        margin: 0rem 0px; 
+        display: inline-block;
+        vertical-align: top;
+        padding: 2rem 2rem 1rem 2rem;
+        overflow: scroll;
+        box-shadow: inset -2px 0px 3px 0px #ddd, inset 2px 0px 3px 0px #ddd;
+        background: #f5f5f5;
+        transition: width 0.4s ease, padding 0.4s ease, color 0.1s ease;
+        scroll-behavior: smooth !important;
+      }
+
+      .holder{
+         opacity: 1;
+          transition-duration: 0.6s;
+          transition-property: opacity;
+      }
+
+      .closed{
+        width: 0px;
+        padding: 0px;
+        overflow: hidden;
+        color: transparent;
+/*        word-break: keep-all;*/
+/*        white-space: nowrap;*/
+      }
+
+      .right{
+        width: calc( 100% - 38rem);
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        padding: 1.6rem 0px 0vh 1rem;
+        height: calc( 100vh - 1.6rem );
+        overflow: scroll;
+         opacity: 1;
+          transition-duration: 0.6s;
+          transition-property: opacity;
+          scroll-behavior: smooth !important;
+      }
+
+      p{
+        margin: 2.3rem 0px;
+        font-size: 19px;
+        line-height: 1.4em;
+        font-weight: 200;
+
+      }
+
+      main{
+        width: 90%;
+        max-width: 38rem;
+        text-align: left;
+        transition: all 0.5s ease;
+        display: inline-block;
+      }
+
+      main a{
+        font-weight: 600;  
+      }
+      
+      #bottom{
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+      }
+
+      a{
+        color: inherit;
+        text-decoration: none;  
+      }
+
+      a:hover{
+         text-decoration: underline;  
+      }
+
+
+      .leftmost-item{
+        width: 100%;
+        margin: 5px 0%;
+        font-size: 17px;
+        font-weight: 200;
+      }
+
+      .left-item{
+        width: 100%;
+        margin: 15px 0%;
+        font-size: 16px;
+        font-weight: 200;
+      }
+
+      .left-item > a:hover, .leftmost-item > a:hover{
+        text-decoration: underline;
+      }
+
+      .bold > a{
+        font-weight: 800;
+      }
+
+      .bold > a:hover{
+        text-decoration: none ;
+      }
+
+      .bold{
+        margin: 0.6rem 0px;
+      }
+
+      .subtitle{
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      .close-mobile-menu, #mobile-menu{
+          display: none;
+      }
+
+      @media only screen and (max-width: 1000px){
+        .left{
+          display: none;
+        }
+
+        .right{
+          width: calc( 100% - 20rem);
+
+        }
+      }
+
+      @media only screen and (max-width: 600px){
+
+        h3{
+          font-size: 24px;
+        }
+
+        h2{
+          font-size: 32px;
+        }
+
+        p{
+          font-size: 17px;
+          line-height: 1.5em;
+        }
+
+        #mobile-menu #title{
+          font-size: 1.5em;
+          line-height: 1.2rem;
+          width: 7rem;
+          text-align: left;
+          font-weight: 300;
+          margin: 5px 5px;
+          display: inline-block;
+           vertical-align: top;
+        }
+
+        .close-mobile-menu{
+          text-align: right;
+          width: 100%;
+          margin-top: -1rem;
+          margin-bottom: -1rem;
+          display: block;
+        }
+
+        #mobile-menu{
+          text-align: left;
+          margin-bottom: 2rem;
+          padding: 0px 1rem;
+          display: block;
+
+        }
+
+        #buttons{
+          display: inline-block;
+          border: none;
+          width: calc( 100% - 8rem);
+          text-align: right;
+          padding: 3px 0px;
+        }
+
+        .close-mobile-menu button, #mobile-menu button{
+          display: inline-block;
+          margin: 0px 10px;
+          background: transparent;
+          border: none;
+          height: 1.5em;
+          vertical-align: top;
+          font-size: 16px;
+          font-family: 'Petrona';
+        }
+
+        .close-mobile-menu button{
+          margin-right: -1rem;
+        }
+
+        .left{
+          display: none;
+        }
+
+        .leftmost{
+          display: none;
+          width: calc( 100% - 4rem)
+        }
+
+        a{
+          text-decoration: underline;
+        }
+
+        #title a{
+          text-decoration: none;
+        }
+
+        .right{
+          width: calc( 100% - 0rem);
+          padding: 0rem;
+          padding-top: 1rem;
+        }
+
+        main{
+          width: 86%;
+          margin: 0px 1%;
+        }
+
+
+         .invisible{
+          display: none;
+        }
+
+        .visible{
+          display: inline-block;
+        }
+
+        td, th{
+           word-break: break-word;
+           padding: 10px;
+        }
+      }
