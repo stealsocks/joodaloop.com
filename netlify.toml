@@ -16,12 +16,12 @@
   to = "/404.html"
   status = 404
 
-[headers]]
+[[headers]]
   for = "/fonts/*"
     [headers.values]
     Cache-Control = "public, immutable, max-age=31536000"
 
-[headers]]
+[[headers]]
   for = "/photos/*"
     [headers.values]
     Cache-Control = "public, immutable, max-age=31536000"
