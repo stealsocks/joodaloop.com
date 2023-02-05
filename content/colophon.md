@@ -32,7 +32,7 @@ The internet has gotten faster, but average page load times have [stayed the sam
   <tbody>
 	    <tr>
 		      <td> <a href="https://yellowlab.tools/result/ghj1rut4fo"> Yellow Lab Test </a></td>
-		      <td>98/100 </td>
+		      <td>100/100 </td>
 	    </tr>
 	    <tr>
 		      <td><a href="https://pagespeed.web.dev/report?url=https://joodaloop.com/">PageSpeed </a></td>
