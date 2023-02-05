@@ -35,12 +35,20 @@ The internet has gotten faster, but average page load times have [stayed the sam
 		      <td>100/100 </td>
 	    </tr>
 	    <tr>
-		      <td><a href="https://pagespeed.web.dev/report?url=https://joodaloop.com/">PageSpeed </a></td>
+		      <td><a href="https://pagespeed.web.dev/report?url=https://joodaloop.com/">PageSpeed Insights</a></td>
 		      <td> 100/100</td>
+    	</tr>
+    	<tr>
+		      <td><a href="https://www.debugbear.com/test/website-speed/Rrv52Rat/overview">DebugBear</a></td>
+		      <td> 100% lab score</td>
     	</tr>
     	<tr>
 		      <td><a href="https://www.512kb.club/"> 512kb Club </a></td>
 		      <td> Approved member </td>
+    	</tr>
+    	<tr>
+		      <td><a href="https://250kb.club/page/3/">250kb Club</a></td>
+		      <td> Approved member</td>
     	</tr>
   </tbody>
 
