@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  
+  <title> {{ .Title }} • Judah • </title>
   <meta charset="utf-8">
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-  <title> joodaloop </title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180"  href="/photos/card.jpg"> 
   <link rel="icon" type="image/png" sizes="32x32" href="/photos/card.jpg"> 
@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="/css/snow.css">
   <script async defer data-website-id="427207a6-7bf1-49c8-b4a3-9cd4a6a1c6c9" src="https://analytics.joodaloop.com/umami.js"></script>
 
+  <meta name="description" content="{{ .Description }}">
+  
   {{ partial "styles.html" . }}
 
   <style>
