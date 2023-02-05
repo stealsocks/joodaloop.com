@@ -19,7 +19,7 @@ Say no to enough parties that you stop getting invited. Then go home and read in
 
 Spend incredible amounts of time and effort pursuing one person. Put all your eggs in one basket. If they take half your money, just [double it again](https://twitter.com/gbrl_dick/status/1499592129986789378?s=20).
 
-"The online male science of talking to women, of the recent decade, is an attempt to reduce or remove, uncertainty. Just as all science, they attempt to resolve the induction problem with statistics: approach 100 girls and one will give you her number. And just like all scientists, the practitioners all eventually go mad..." [Egg Report](https://eggreport.substack.com/p/beyond-certainty)
+<div class=quote>"The online male science of talking to women, of the recent decade, is an attempt to reduce or remove, uncertainty. Just as all science, they attempt to resolve the induction problem with statistics: approach 100 girls and one will give you her number. And just like all scientists, the practitioners all eventually go mad..." <a href="https://eggreport.substack.com/p/beyond-certainty">Egg Report </a> </div>
 
 You can just, like, tell people you plan to marry them as soon as you know you want to. Even right after you meet them. Really. Nobody's stopping you. (Girls would enjoy higher success rates if they tried this, maybe.)
 
@@ -43,7 +43,7 @@ If you’re young, spend your paychecks immediately. Save like, 10% if you want 
 
 Start a newsletter, intending to publish weekly posts. Instead, only send out writing that you're proud of, and end up publishing once per month (if at all).
 
-“I write very seldom. I don’t write every day. I’m not someone who just sits down and figures it out...That doesn’t mean I don’t fail, but I do a lot of failing in here. \[Points to head.\] There’s already a lot of drafting in here. I’m just very selective when I actually commit to composition. Once I sit down to write, chances are it’s gonna be something I’m gonna publish.” [Ocean Vuong](https://www.newyorker.com/culture/the-new-yorker-interview/ocean-vuong-is-still-learning)
+<div class=quote> “I write very seldom. I don’t write every day. I’m not someone who just sits down and figures it out...That doesn’t mean I don’t fail, but I do a lot of failing in here. \[Points to head.\] There’s already a lot of drafting in here. I’m just very selective when I actually commit to composition. Once I sit down to write, chances are it’s gonna be something I’m gonna publish.” <a href="https://www.newyorker.com/culture/the-new-yorker-interview/ocean-vuong-is-still-learning">Ocean Vuong</a> </div>
 
 Have a fairly unfiltered anonymous blog, and upload stuff as often as you can. Use something like [write.as](https://write.as) or [Bear Blog](https://bearblog.dev).
 
@@ -71,7 +71,7 @@ Never get 8 hours of sleep, [you don't need it](http://mythicalstrength.blogspot
 
 Don't do things you hate doing. Learn to enjoy them, or stop.
 
-“Willpower is a stopgap measure; any plan that requires continuous application of willpower is doomed.” [Nate Soares](https://mindingourway.com/enjoying-the-feeling-of-agency/)
+<div class=quote>“Willpower is a stopgap measure; any plan that requires continuous application of willpower is doomed.” <a href="https://mindingourway.com/enjoying-the-feeling-of-agency/">Nate Soares</a></div>
 
 Get [a phone](https://en.wikipedia.org/wiki/IPhone_SE_(1st_generation)) that's 6 years old, with a screen smaller than credit card. Then turn on system-wide grayscale.
 

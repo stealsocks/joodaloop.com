@@ -4,15 +4,17 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="/css/snow.css">
+  <script async defer data-website-id="427207a6-7bf1-49c8-b4a3-9cd4a6a1c6c9" src="https://analytics.joodaloop.com/umami.js"></script>
+  
 
 
   <style>
       @font-face {
         font-family: 'Petrona';
-        font-style: normal;
         src: url('fonts/Petrona.woff2') format('woff2');
-         font-display: block;
+         font-display: swap;
+         font-weight: 1 999; 
          font-style: normal;
       }
 
@@ -38,6 +40,7 @@
         padding: 0px;
         padding-bottom: 5rem;
         margin: 0px;
+        overflow: scroll;
         width: 100%;
         opacity: 1;
         transition: opacity 1.5s ease;
@@ -45,6 +48,19 @@
 
       body.fade{
         opacity: 0;
+      }
+
+      .snowflake:after {
+          margin-top: -calc(var(--size) + 10px);
+          margin-left: -calc(var(--size) + 10px);
+          content: "•"; 
+          font-size: calc(var(--size) + 5px);
+          pointer-events: auto;
+          visibility: visible;
+          transition: opacity 20s ease, font-size 1s ease;  
+           color: transparent;
+          text-shadow: 0 0 0 black;
+          opacity: 0.6;
       }
 
       html{
@@ -65,6 +81,7 @@
 
       h2{
         padding: 0px;
+        font-weight: 800;
         margin: 10px 0px;
       }
 
@@ -89,7 +106,7 @@
 
       .half{
         text-align: center;
-        width: 40%;
+        width: 38%;
         max-width: 26rem;
         display: inline-block;
         vertical-align: top;
@@ -99,7 +116,7 @@
         width: 0rem;
         margin: 0rem 4rem;
         border-left: solid 1px lightgray;
-        padding: 25% 0%;
+        padding: 52vh 0%;
         display: inline-block;
       }
       .section{
@@ -138,6 +155,21 @@
 
       a:hover {
         color: black;
+      }
+
+      @media only screen and (max-width: 1000px){
+        .whitespace{
+        width: 0rem;
+        margin: 0rem 2.6rem;
+        border-left: solid 1px lightgray;
+        padding: 50% 0%;
+        display: inline-block;
+      }
+
+      .mono{
+        font-family: monospace;
+      }
+      
       }
 
       @media only screen and (max-width: 600px){
@@ -235,12 +267,6 @@
 /*         font-style: italic;*/
     }
 
-    .toc-list li > a > .title:hover {
-/*      text-shadow: 0px 0px 2px grey;*/
-      color: grey;
-      transition: color 0.3s ease;
-    }
-
     .toc-list li > a > .title:hover > .leaders{
       color: black;
     }
@@ -275,10 +301,21 @@
         padding: 5px 7px;
         border-radius: 50%;
         z-index: 1;
-
     }
 
-    .page:hover + .hidden, .page:active + .hidden{
+    .mono{
+      filter: saturate(0%) brightness(50%);
+       text-shadow: 0 0 #dbe2ec;
+    }
+
+    .toc-list li > a > .title:hover {
+/*      text-shadow: 0px 0px 2px grey;*/
+/*      color: grey;*/
+/*      transition: color 0.3s ease;*/
+    }
+
+/*     .toc-list li > a:hover > .hidden, */
+     .page:hover + .hidden, .page:active + .hidden{
       opacity: 1;
       max-height: 100px;
       transition: max-height 0.6s linear, opacity 0.5s linear;
@@ -322,7 +359,7 @@
 
 <main>
 
-  <h1> <a style="text-decoration:none" href="colophon">joodaloop</a> </h1>
+  <h1> <a style="text-decoration:none" href="personal">joodaloop</a> </h1>
 <div class="half palatino">
   
 
@@ -330,20 +367,24 @@
     <ol class="toc-list" role="list">
 
           <li>
-               <a href="#Introduction">
+               <a href="/bad-advice">
                     <span class="title bold">Bad Advice<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                     class="visually-hidden">Page&nbsp;</span>iii</span>
                           <span class=hidden> You should definitely not do all these things that I've done.</span>
                </a>
 
-                 <a href="#Introduction">
-                      <span class="title bold">Blogroll<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                 <a href="/essays">
+                      <span class="title bold">Essays<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                       class="visually-hidden">Page&nbsp;</span>vi</span>
+                          <span class=hidden> Long-form writing that I'm proud of.</span>
+
                  </a>
 
-                <a href="#Introduction">
+                <a href="/ideas">
                       <span class="title bold">Plans & Ideas<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                       class="visually-hidden">Page&nbsp;</span>vi</span>
+                          <span class=hidden> Thought bubbles. </span>
+
                  </a>
 
         </li>
@@ -375,6 +416,35 @@
 
   </div>
 
+   <div class=section> 
+    <h2> Lists & Highlights </h2>
+
+    <ol class="toc-list" role="list">
+
+          <li>
+             <ol role="list">
+
+                    <li>
+
+                       {{ range where (where .Site.RegularPages "Type" "list") "File.Dir" "lists/" }}
+
+                       <a href="{{ .Permalink }}">
+                            <span class="title">{{.Title}}<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>
+                            5 </span>
+                            <span class=hidden> {{.Description}} </span>
+                        </a>
+
+                       {{ end }}
+                </a>
+              </li>
+           </ol>
+        </li>
+    </ol>
+
+  </div>
+
 
   <div class=section> 
     <h2> Notes </h2>
@@ -397,18 +467,6 @@
                         </a>
 
                        {{ end }}
-
-                 <a href="#Introduction-About-This-Book">
-                            <span class="title">Genomics<span class="leaders" aria-hidden="true"></span></span> 
-                            <span data-href="#Introduction-About-This-Book" class="page">
-                              <span class="visually-hidden">Page&nbsp;</span>5</span>
-                </a>
-
-                <a href="#Introduction-About-This-Book">
-                            <span class="title">Design<span class="leaders" aria-hidden="true"></span></span> 
-                            <span data-href="#Introduction-About-This-Book" class="page">
-                              <span class="visually-hidden">Page&nbsp;</span>5</span>
-                </a>
               </li>
            </ol>
         </li>
@@ -458,29 +516,32 @@
                     <li>
                         <a href="#Introduction-About-This-Book">
                             <span class="title">The Problem of Too Much Money<span class="leaders" aria-hidden="true"></span></span> 
-                            <span data-href="#Introduction-About-This-Book" class="page">
+                            <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>
                             ↗ </span>
-                            <span class=hidden> A talk about longevity in technology: can a person have 20 years of experience or five years, repeated four times?</span>
+                            <span class=hidden> Yes, it's a real thing. Yes, I wish I had that problem too.</span>
                 </a>
 
                 <a href="#Introduction-About-This-Book">
                             <span class="title">What Do Your Ideas Want From You?<span class="leaders" aria-hidden="true"></span></span> 
-                            <span data-href="#Introduction-About-This-Book" class="page">
+                            <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>
                             ↗ </span>
+                             <span class=hidden> How are your ideas using you? Do you want them to? </span>
                 </a>
 
                  <a href="#Introduction-About-This-Book">
                             <span class="title">Form is Fake<span class="leaders" aria-hidden="true"></span></span> 
-                            <span data-href="#Introduction-About-This-Book" class="page">
+                            <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>↗</span>
+                               <span class=hidden> A case for rule-skepticism. </span>
                 </a>
 
                  <a href="#Introduction-About-This-Book">
                             <span class="title">Apologies as Signalling<span class="leaders" aria-hidden="true"></span></span> 
-                            <span data-href="#Introduction-About-This-Book" class="page">
+                            <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>↗</span>
+                               <span class=hidden> Nervous hedging or signifier of taste?</span>
                 </a>
 
               </li>
@@ -497,11 +558,15 @@
             <a href="colophon">
                       <span class="title bold">Colophon<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                       class="visually-hidden">Page&nbsp;</span>vi</span>
+                               <span class=hidden> About this site. </span>
+
                  </a>
               
               <a href="personal">
                       <span class="title bold">Personal<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                       class="visually-hidden">Page&nbsp;</span>ix</span>
+                               <span class=hidden> Me, and my stuff.</span>
+
                  </a>
 
             </li>
@@ -523,6 +588,11 @@
         }, 300);
 
       })  
+                document.body.innerHTML += `<div id="snowbg"></div>`
+
+                for(i=0; i<(screen.width/40 + 5); i++){
+                     document.getElementById("snowbg").innerHTML += `<div class="snowflake"></div>`
+                 }
   </script>
 </body>
 

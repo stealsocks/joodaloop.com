@@ -12,7 +12,7 @@ Principles
 
 I find it easy to make design choices when I've already chosen a set of constraints/rules to adhere to. For this version of my site, I chose the following principles:
 
-### Speed
+### I. Speed
 
 The internet has gotten faster, but average page load times have [stayed the same](https://www.nngroup.com/articles/the-need-for-speed/). This kinda sucks, and this site tries to lower that average.
 
@@ -52,13 +52,13 @@ The internet has gotten faster, but average page load times have [stayed the sam
 Thus, the majority of it's load time is taken up by latency, not bandwidth. That, in turn, is minimised using Netlify's global CDN and prefetching/caching.
 
 
-### Thoughtfulness
+### II. Thoughtfulness
 
 There are annoying bugs that must be dealt with, quality is choosing to care about them.
 
 "But the joy of web design & typography is that just its presentation can matter a little to all your pages." Gwern
 
-### Simplicity
+### III. Simplicity
 
 Simplicity does not imply minimalism. Nor does it necessarily involve strict rules like "No Javascript or animations!"
 
@@ -68,7 +68,9 @@ The real goal is to have the site be as easy as possible to maintain, modify, an
 
 ## Content
 
-I hate doing things that I know I won't care about in a year (or more) from now. So the idea of a [long site](https://gwern.net/About#long-site) was an obviously appealing one. [This post](https://www.cyberpatterns.xyz/p/twittercapital) is the closest you can get to defining the _opposite_ of what I want to do.
+I hate doing things that I know I won't care about in a year (or more) from now. So the idea of a [long site](https://gwern.net/About#long-site) was an obviously appealing one. 
+
+<!-- [This post](https://www.cyberpatterns.xyz/p/twittercapital) is the closest you can get to defining the _opposite_ of what I want to do. -->
 
 
 <table>
@@ -85,27 +87,27 @@ I hate doing things that I know I won't care about in a year (or more) from now.
 
   <tbody>
 	    <tr>
-		      <td> <a href="useful.html"> Useful </a></td>
+		      <td> <a href="#"> Useful </a></td>
 		      <td>There are certain topics that I've been asked to talk or write about before for. Posts listed on this page were written mainly for utilitarian purposes (how to do X). </td>
 	    </tr>
 	    <tr>
-		      <td><a href="lists.html"> Lists & Highlights </a></td>
+		      <td><a href="#"> Lists & Highlights </a></td>
 		      <td>Primarily curation.</td>
     	</tr>
 	    <tr>
-		      <td><a href="bad-advice.html"> Bad Advice </a></td>
+		      <td><a href="/bad-advice"> Bad Advice </a></td>
 		      <td>Things that I have done that worked out well, but would usually be considered terrible advice.</td>
     	</tr>
     	<tr>
-		      <td><a href="essays.html"> Essays </a></td>
+		      <td><a href="/essays"> Essays </a></td>
 		      <td>A list of my best essays, and a blogroll.</td>
     	</tr>
     	<tr>
-		      <td><a href="personal.html"> Personal </a></td>
+		      <td><a href="/personal"> Personal </a></td>
 		      <td>About me.</td>
     	</tr>
     	<tr>
-		      <td><a href="colophon.html"> Colophon </a></td>
+		      <td><a href="/colophon"> Colophon </a></td>
 		      <td>The page you're on right now.</td>
     	</tr>
   </tbody>
@@ -117,7 +119,7 @@ Target Audience
 
 People with too much time on their hands.
 
-Or anyone who cares about the web, economics, math, people, ideas, terrible advice, [magic ink](lists/things-i-think-about-often.html#Information%20architecture), or me.
+Or anyone who cares about the web, economics, math, people, ideas, terrible advice, [magic ink](lists/things-i-think-about-often.html#Information%20architecture), or [me](/personal).
 
 Etymology
 ---------
@@ -162,32 +164,42 @@ Stealing ideas for specific elements, data representation, page types, content a
 ## Stack
 
 
-This site is a collection of hand-written HTML files. Hosted on Github, served by Netlify.
+This site is generated using [Hugo](https:/gohugo.io), chosen for it's speed and feature set. The layout uses a custom theme (that I intend to make open-source in the future) and uses no external libraries or frameworks.
 
-Eventually, I might have to pick a static site generator to manage the sheer number of pages I plan to add, and to make writing easier with Markdown. But we'll cross that bridge once we get to it. Until then, I've found other ways to do things.
+| Service | Purpose |
+|-|-|
+| [Github](https://github.com) & [Git](https://git-scm.com/) | Hosting and version control. |
+| [Netlify](https://netlify.com) | Deployment, SSL certificates, CDN and caching. |
+| [Google Domains](https://domains.google.com/) | Domain provider with the most transparent pricing. |
+
 
 Features
 --------
 
 The design choices and constraints were largely decided by the principles set out above, and manifested themselves in certain specific ways:
 
-*   Table of contents: The table is available on iPads too, but is hidden on mobile.
-*   Always-accesible menus: Visitors should never have to scroll back up to go where they want to. Both the global navigation links and the table of content links stay fixed while you scroll through the page.
-*   Dark mode: Monotone dark mode available (if you can find the switch), with smooth toggling and 10% brightness reduction on dark mode images. User preferences are stored locally.
+- **Table of contents:** A list of page headers is auto-generated by Hugo's `.TableOfContents` [variable](https://codingreflections.com/blog/hugo-table-of-contents) and added to the center column. It is available on iPads and desktop screens, but is hidden on mobile.
 
-Media
------
+- **SPA-like navigation:** I just use a small script to store the menu's scroll-position to LocalStorage and retrieve it on page refresh. Page loads also use an animated fade-in effect to make naviagation feel smooth. 
+
+    Check out [Brian's site](https://brianlovin.com/writing/how-my-website-works) for a better example of this, but that's an *actual* Next.js SPA, and requires so much [effort](https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/). 
+
+- **Tools**:
+
+## Media
+
 
 Images are compressed using [Squoosh](https://squoosh.app) and uploaded directly to the site repository. Netlify's CDN is responsible for delivering and caching them alongside each page.
 
+
+
 ## Fonts
 
+The main font used across this site is [Petrona](https://fonts.google.com/specimen/Petrona?category=Serif&vfonly=true&thickness=5), designed by [Ringo R. Seeber](https://github.com/RingoSeeber/Petrona). It's one of the few fonts that has the full range of possible font-weights, for both italic and normal styles.
 
-The main font used across this site is [Petrona](https://en.bestfonts.pro/font/proxima-soft), designed by Mark Simonson. It's one of the few fonts that has the full range of possible font-weights.
+Font files are served and cached locally as (variable) WOFF2 files. 
 
-It is served (and cached locally) as a variable WOFF2 file. 
 
 ## Analytics
-
 
 Site analytics provided by [Umami](https://umami.is/), a really cool self-hosted, open source, GDPR-compliant analytics project. This means no cookies, tracking or personal data collection.

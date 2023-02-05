@@ -12,13 +12,21 @@
   </span>  -->
 
 
-  <div class=leftmost id=leftmost>
+  <div class=leftmost id=leftmost style="-webkit-overflow-scrolling: touch;">
+
     <div class=close-mobile-menu> <button onclick="toggleLeftMost()"> ╳ </button></div>
 
-    <h1> <a href="/"> joodaloop </a> </h1>
+    <h1 id=page-title> <a href="/"> joodaloop </a> </h1>
     <ol class="toc-list" role="list">
 
           <li>
+            <a href="/personal">
+                      <span class="title bold">Personal<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                                      class="visually-hidden">Page&nbsp;</span>i</span>
+                          <span class=hidden> Me and my stuff.</span>
+
+            </a>
+
                <a href="/bad-advice">
                     <span class="title bold">Bad Advice<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                     class="visually-hidden">Page&nbsp;</span>iii</span>
@@ -28,11 +36,13 @@
                  <a href="/essays">
                       <span class="title bold">Essays<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                       class="visually-hidden">Page&nbsp;</span>vii</span>
+                          <span class=hidden> Long-form writing that I'm proud of.</span>
                  </a>
 
                 <a href="/ideas">
                       <span class="title bold">Plans & Ideas<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                       class="visually-hidden">Page&nbsp;</span>xi</span>
+                          <span class=hidden> Thought bubbles.</span>
                  </a>
 
         </li>
@@ -42,13 +52,9 @@
 
     <h2> Lists & Highlights </h2>
 
-   <!--  <div class=leftmost-item> <a href="#"> Things I Think About Often </a> </div>
-    <div class=leftmost-item> <a href="other.html"> Project Watchlist </a> </div>
-    <div class=leftmost-item> <a href="#"> Quotes </a> </div>
-    <div class=leftmost-item> <a href="#"> Software I Like </a> </div>
-    <div class=leftmost-item> <a href="#"> Anti-library </a> </div>
-    <div class="leftmost-item"> <a href="#"> Blogroll </a> </div>
-    <div class="leftmost-item"> <a href="#"> Idea Lists </a> </div> -->
+    <!-- <div class=leftmost-item> <a href="#"> Quotes </a> </div>
+    <div class=leftmost-item> <a href="#"> Software I Like </a> </div> -->
+
 
     {{ range where .Site.Pages "Type" "list" }}
            <div class=leftmost-item> <a href="{{ .Permalink }}"> {{.Title}} </a> </div>
@@ -61,23 +67,8 @@
     <h2> Useful </h2>
 
     {{ range where (where .Site.RegularPages "Type" "useful") "File.Dir" "useful/" }}
-
-
            <div class=leftmost-item> <a href="{{ .Permalink }}"> {{.Title}} </a> </div>
     {{ end }}
-
-   <!--  <h3> Body </h3>
-    <div class=leftmost-item> <a href="#"> Lifting & Bodybuilding </a> </div>
-    <div class=leftmost-item> <a href="#"> Health Stuff </a> </div>
-
-
-    <h3> Productivity </h3>
-
-    <div class=leftmost-item> <a href="#"> To-do Stack </a> </div>
-    <div class=leftmost-item> <a href="#"> How I Write </a> </div>
-    <div class=leftmost-item> <a href="#"> Shortcuts </a> </div>
-
- -->
 
     </div>
 
@@ -91,6 +82,7 @@
 
     </div>
 
+
     <div class=section>
     <h2> Projects </h2>
 
@@ -101,24 +93,26 @@
 
     </div>
 
-    <!-- <div class="leftmost-item bold"> <a href="/colophon"> Colophon </a> </div> -->
-
      <ol class="toc-list" role="list">
 
-          <li>     <a href="personal">
-                      <span class="title bold">Personal<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
-                                      class="visually-hidden">Page&nbsp;</span>ix</span>
-                 </a>
+          <li>     
                    
-                 <a href="/colophon">
+            <a href="/colophon">
                       <span class="title bold">Colophon<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
                                       class="visually-hidden">Page&nbsp;</span>xxi</span>
-                 </a>
+                          <span class=hidden> About this site.</span>
 
-        </li>
+            </a>
+
+            <a href="/">
+                      <span class="title bold">Sitemap<span class="leaders" aria-hidden="true"></span></span> <span data-href="#Introduction" class="page"><span
+                                      class="visually-hidden">Page&nbsp;</span>xxi</span>
+                          <span class=hidden> Home page.</span>
+
+            </a>
+
+          </li>
     </ol>
-
-
 
   </div><div class=left id=left>
     <div class=holder id=holder>
@@ -158,22 +152,40 @@
     document.getElementById("left").classList.toggle("closed")
   }
 
+
+
   let sidebar = document.getElementById("leftmost");
+  let scroll = localStorage.getItem("sidebar-scroll")
 
-  let scroll = localStorage.getItem("sidebar-scroll");
-
-  if (scroll != null) {
+  if (scroll !== null) {
     sidebar.scrollTop = parseInt(scroll, 10);
+    // console.log(sidebar.scrollTop)
   }
 
   window.addEventListener("beforeunload", () => {
     localStorage.setItem("sidebar-scroll", sidebar.scrollTop);
   });
 
+  window.addEventListener("pagehide", () => {
+    localStorage.setItem("sidebar-scroll", sidebar.scrollTop);
+  });
+
+  // setInterval( () => { console.log(sidebar.scrollTop); } , 1000)
+
+
   function toggleLeftMost(){
     document.getElementById("leftmost").classList.toggle("visible")
     document.getElementById("right").classList.toggle("invisible")
   }
+
+
+ //  const scroller = document.getElementById("right");
+ //    console.log(scroller)
+
+
+ //  scroller.addEventListener('mouseover', () => {
+ //    console.log('scroll event fired!')
+ // });
 
     </script>
 

@@ -4,13 +4,16 @@ date: 2019-02-14T15:36:09-06:00
 tags: [hugo, markdown]
 toc: true
 type: "list"
-description: "A running list of my brainworms"
+description: "Running list of my brainworms."
 ---
 
 
 I originally planned to call this page "Things I Care About", but soon realised that the things that crossed my mind frequently were not necessarily things I intended to think about, let alone care for. Egregores are rarely considerate enough to request permission.
 
-“I don't really understand how people pick two "research interests". My two research interests are things and stuff.” [Gleech](https://www.gleech.org/about/)
+<div class=quote>
+“I don't really understand how people pick two "research interests". My two research interests are things and stuff.” <a href="https://www.gleech.org/about/"> Gleech </a>
+</div>
+
 
 If you see a common thread running through all of these things, please let me know, because I sure don't.
 
@@ -29,7 +32,7 @@ There was a praticular type of idea I've been trying to point at for a while, bu
 
 Then I found Aaron's post on [incremental moonshots](https://aaronzlewis.com/blog/2013/05/16/incremental-moonshots/) and was gifted the perfect term.
 
-"Moonshot thinking works for those in positions that offer them astronomical opportunities. But for the rest of us aspiring innovators, the approach can be unhelpful at best, and crippling at worst. When you’re not a billionaire or an executive of a massive corporation, innovation happens in small steps" [Aaron Z. Lewis](https://twitter.com/aaronzlewis)
+<div class=quote> "Moonshot thinking works for those in positions that offer them astronomical opportunities. But for the rest of us aspiring innovators, the approach can be unhelpful at best, and crippling at worst. When you’re not a billionaire or an executive of a massive corporation, innovation happens in small steps." <a href="https://twitter.com/aaronzlewis">Aaron Z. Lewis </a> </div>
 
 
 ## Markets & Distribution

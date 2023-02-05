@@ -1,33 +1,84 @@
- @font-face {
+<style>
+  @font-face {
         font-family: 'Petrona';
         font-style: normal;
         src: url('/fonts/Petrona.woff2') format('woff2');
          font-display: swap;
+         font-weight: 1 999; 
       }
 
   @font-face {
         font-family: 'Petrona';
-        font-style: normal;
         src: url('/fonts/Petrona-Italic.woff2') format('woff2');
          font-display: swap;
          font-style: italic;
+         font-weight: 1 999; 
       }
 
       body {
         font-size: 18px;
         line-height: 1.4em;
+        font-weight: 200;
         padding: 0px;
-        margin: 0px;
+        margin: 0px;    
         width: 100%;
         height: 100vh;
         font-family: "Petrona";
         overflow: hidden;
         position: relative;
         background: white;
+        color: black
+      }
+
+      br{
+        display: block;
+         content: "";
+         border-bottom: 10px solid transparent;
+      }
+
+      .quote{
+        width: calc(100% - 4rem);
+        margin: 1.8em 2rem 1.8em 2rem;
+        font-style: italic;
+        line-height: 1.5em;
+        font-weight: 200;
+/*        color: grey;*/
+        font-size: 18px;
+        text-align: justify;
+/*        hyphens: auto;*/
+      }
+
+      .quote > a::before{
+        content: "—";
+        margin: 0px 1px 0px 4px;
+        font-weight: 200;
+      }
+
+      .quote > a {
+        color: black;
+        margin-top: 0.6rem;
+        width: 40%;
+        margin-left: 50%;
+        text-align: right;
+        display: block;
+        text-decoration: none;
+      }
+
+      .quote > a:hover{
+        text-decoration: none;
+      }
+
+      hr{
+        margin: 18px 0px 5px 0px;
+        display: block;
+      }
+
+      #link-list br{
+       border-bottom: 3px solid transparent;
       }
 
       main ul, ol{
-         margin: 35px 0px;
+         margin: 1.3px 0px;
         font-weight: 200;
       }
 
@@ -39,7 +90,7 @@
         font-weight: 100;
         font-family: monospace;
         font-size: 0.9em;
-        padding: 0.1em 3px;
+        padding: 0.1em 5px;
         background: #eee;
       }
 
@@ -120,9 +171,9 @@
       text-decoration: underline;
     }
 
-    .toc-list li > a > .title:hover > .leaders{
+    /*.toc-list li > a > .title:hover > .leaders{
       color: black;
-    }
+    }*/
 
     .toc-list li > a > .title.bold {
       font-weight: 800;
@@ -157,7 +208,7 @@
       font-weight: 200;
     }
 
-    .page:hover + .hidden, .page:active + .hidden{
+    .page:hover + .hidden, .page:active + .hidden, .hidden:hover{
       opacity: 1;
       max-height: 100px;
       transition: max-height 0.6s linear, opacity 0.5s linear;
@@ -174,6 +225,7 @@
       transition: max-height 0.6s ease-out, opacity 0.45s linear;
       transition-delay: 0s, 0.1s;
       line-height: 1.4em;
+      width: 105%;
       }
 
     .hidden:after{
@@ -223,6 +275,10 @@
       background: white;
     }
 
+    tr th{
+      background: white;
+    }
+
     td{
       padding: 20px 20px;
       vertical-align: top;
@@ -241,7 +297,7 @@
          list-style-type: none;
           margin: 0px;
           padding: 0px;
-        font-weight: 400;
+        font-weight: 200;
       }
 
       #TableOfContents ul a:hover{
@@ -254,7 +310,7 @@
          list-style-type: none;
           margin: 0px 0px 0px 30px;
           padding: 0px;
-          font-weight: 200;
+          font-weight: 100;
       }
 
       nav#TableOfContents ul ul a:hover{
@@ -282,8 +338,8 @@
 
       h1{
         line-height: 1.3em;
-        font-weight: 900;
-        font-size: 3rem;
+        font-weight: 800;
+        font-size: 3.4rem;
         margin: 1rem 0px 2rem 0px;
       }
 
@@ -293,15 +349,16 @@
 
       .leftmost{
         width: 14rem;
-        border-right: solid 1px #ddd;
-        height: calc( 100vh - 3rem);
+        height: calc( 100vh - 4rem);
         margin: 0rem 0px;
         display: inline-block;
+        border-right: solid 1px #ddd;
         position: relative;
-        padding: 2rem 2rem 1rem 2rem;
+        padding: 2rem 2rem 2rem 2rem;
         overflow-y: scroll;
         scroll-behavior: auto;
         pointer-events:auto;
+         –webkit-overflow-scrolling: touch 
       }
 
       .leftmost h1 {
@@ -319,7 +376,7 @@
       }
 
       h2, h3{
-         scroll-margin-top: 1em
+         scroll-margin-top: 1em;
       }
 
       h2{ 
@@ -339,13 +396,14 @@
       .left{
         width: 14rem;
 /*        border-right: solid 1px lightgray;*/
-        height: calc( 100vh - 3rem);
+        height: calc( 100vh - 2.7rem);
         margin: 0rem 0px; 
         display: inline-block;
         vertical-align: top;
-        padding: 2rem 2rem 1rem 2rem;
+        padding: 1.7rem 2rem 1rem 2rem;
         overflow: scroll;
-        box-shadow: inset -3px 0px 3px 0px #ddd, inset 2px 0px 3px 0px #ddd;
+        border-right: solid 1px #ddd;
+        box-shadow: inset -2px 0px 3px 0px #ddd, inset 2px 0px 3px 0px #ddd;
         background: #f5f5f5;
         transition: width 0.4s ease, padding 0.4s ease, color 0.1s ease;
         scroll-behavior: smooth !important;
@@ -383,7 +441,7 @@
       p{
         margin: 1.3em 0px;
         font-size: 19px;
-        line-height: 1.4em;
+        line-height: 1.45em;
         font-weight: 200;
 
       }
@@ -412,7 +470,9 @@
       }
 
       a:hover{
-         text-decoration: underline;  
+         text-decoration: underline; 
+          text-underline-offset: 1.4px;
+
       }
 
 
@@ -432,6 +492,7 @@
 
       .left-item > a:hover, .leftmost-item > a:hover{
         text-decoration: underline;
+        text-decoration-thickness: 1px;
       }
 
       .bold > a{
@@ -455,18 +516,108 @@
           display: none;
       }
 
+
+      @media only screen and (max-width: 1200px) and (orientation: landscape){
+
+           body{
+          height: 100%;
+          position: fixed;
+        }
+
+        html{
+          height: 100%;
+        }
+
+        .leftmost{
+          height: calc( 100% - 4rem);
+        }
+
+        .right{
+            height: calc( 100% - 2.6rem);
+        }
+
+         h3{
+          font-size: 22px;
+          font-weight: 800;
+        }
+
+
+        h1{
+          font-size: 45px;
+        }
+
+        main h2{
+          font-size: 32px;
+          font-weight: 800;
+
+        }
+
+        p{
+          font-size: 18px;
+          line-height: 1.5em;
+        }
+
+        main a{
+          text-decoration: underline;
+          text-underline-offset: 1px;
+        }
+
+       }
+
+
       @media only screen and (max-width: 1000px){
+
         .left{
           display: none;
         }
 
         .right{
           width: calc( 100% - 20rem);
+          height: calc( 100% - 2.6rem);
+        }
 
+        body{
+          height: 100%;
+        }
+
+         html{
+          height: 100%;
+        }
+
+        .leftmost{
+          height: calc( 100% - 4rem);
+        }
+
+         h3{
+          font-size: 22px;
+          font-weight: 800;
+        }
+
+
+        h1{
+          font-size: 45px;
+        }
+
+        main h2{
+          font-size: 32px;
+          font-weight: 800;
+
+        }
+
+        p{
+          font-size: 18px;
+          line-height: 1.5em;
+        }
+
+        main a{
+          text-decoration: underline;
+          text-underline-offset: 1px;
         }
       }
 
-      @media only screen and (max-width: 600px){
+
+
+       @media only screen and (max-width: 600px){
 
         h3{
           font-size: 24px;
@@ -526,6 +677,7 @@
           vertical-align: top;
           font-size: 16px;
           font-family: 'Petrona';
+          color: black;
         }
 
         .close-mobile-menu button{
@@ -544,16 +696,22 @@
 
         a{
           text-decoration: underline;
+          text-underline-offset: 1.5px;
         }
 
         #title a{
           text-decoration: none;
         }
 
+        .leftmost a{
+           text-decoration: none;
+        }
+
         .right{
           width: calc( 100% - 0rem);
           padding: 0rem;
           padding-top: 1rem;
+          height: calc( 100% - 1rem);
         }
 
         main{
@@ -580,3 +738,6 @@
           font-size: 17px;
         }
       }
+
+     
+</style>
