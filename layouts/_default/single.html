@@ -144,7 +144,7 @@
 
 
   let sidebar = document.getElementById("leftmost");
-  let scroll = localStorage.getItem("sidebar-scroll")
+  let scroll = sessionStorage.getItem("sidebar-scroll")
 
   if (scroll !== null) {
     sidebar.scrollTop = parseInt(scroll, 10);
@@ -152,11 +152,11 @@
   }
 
   window.addEventListener("beforeunload", () => {
-    localStorage.setItem("sidebar-scroll", sidebar.scrollTop);
+    sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
   });
 
   window.addEventListener("pagehide", () => {
-    localStorage.setItem("sidebar-scroll", sidebar.scrollTop);
+    sessionStorage.setItem("sidebar-scroll", sidebar.scrollTop);
   });
 
   // setInterval( () => { console.log(sidebar.scrollTop); } , 1000)
