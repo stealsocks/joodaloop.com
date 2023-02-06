@@ -3,6 +3,7 @@ title: "Anti-library"
 date: 2019-02-14T15:36:09-06:00
 toc: true
 type: "list"
+draft: true
 description: "Stuff I should be reading"
 summary: 23
 ---
