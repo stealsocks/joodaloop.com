@@ -720,7 +720,9 @@
 
         .leftmost{
           display: none;
-          width: calc( 100% - 4rem)
+          width: calc( 100% - 4rem);
+          height: calc( 100%);
+          overflow: visible;
         }
 
         a{
@@ -736,10 +738,16 @@
            text-decoration: none;
         }
 
+        body{
+          height: 100%;
+          overflow: auto;
+        }
+
         .right{
           width: calc( 100% - 0rem);
           padding: 0rem;
           padding-top: 1rem;
+          overflow: visible;
           height: calc( 100% - 1rem);
         }
 

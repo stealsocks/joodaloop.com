@@ -31,23 +31,23 @@ The internet has gotten faster, but average page load times have [stayed the sam
 
   <tbody>
 	    <tr>
-		      <td> <a href="https://yellowlab.tools/result/ghj1rut4fo"> Yellow Lab Test </a></td>
+		      <td> <a href="https://yellowlab.tools/result/ghzoms6oxw"> Yellow Lab Test </a></td>
 		      <td>100/100 </td>
 	    </tr>
 	    <tr>
-		      <td><a href="https://pagespeed.web.dev/report?url=https://joodaloop.com/">PageSpeed Insights</a></td>
+		      <td><a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fjoodaloop.com%2F&form_factor=desktop">PageSpeed Insights</a></td>
 		      <td> 100/100</td>
     	</tr>
     	<tr>
-		      <td><a href="https://www.debugbear.com/test/website-speed/Rrv52Rat/overview">DebugBear</a></td>
+		      <td><a href="https://www.debugbear.com/">DebugBear</a></td>
 		      <td> Lab score: 100%</td>
     	</tr>
     	<tr>
-		      <td><a href="https://speedvitals.com/report/statuesque-sorbet-f31315.netlify.app/3N21rZ/">SpeedVitals</a></td>
+		      <td><a href="https://speedvitals.com/">SpeedVitals</a></td>
 		      <td> Grade: A (100%) </td>
     	</tr>
     	<tr>
-		      <td><a href="https://gtmetrix.com/reports/statuesque-sorbet-f31315.netlify.app/TYWX5SwF/">GTMetrix</a></td>
+		      <td><a href="https://gtmetrix.com/">GTMetrix</a></td>
 		      <td> Grade: A (100%) </td>
     	</tr>
     	<tr>
