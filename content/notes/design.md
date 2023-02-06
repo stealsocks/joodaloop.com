@@ -14,7 +14,7 @@ I'm no professional. Insofar as I do care about good design, it is for the strai
 
 At first glance, it seems like a dry discipline, filled with rather boring rules about line-widths and parargraph spacing. 
 
-But the effect that a simple font change can have remains oft-underrated, and the first step in my process usually involves finding on that fits the needs of the project. 
+But the effect that a simple font change can have remains oft-underrated, and the first step in my process usually involves finding one that fits the vibe of the project. 
 
 
 In moments of doubt, I simply return to the question: *"does this look like I want it to?"*. I'm still not sure about the answer for this site.
@@ -39,4 +39,3 @@ Again, I am no expert. The standard is simply *"do i enjoy using this?"*.
 | Resource  | About |
 |-|-|
 | [The Elements of UI Engineering](https://overreacted.io/the-elements-of-ui-engineering/)    | What makes UI engineering difficult? |
-| [Web Typography](https://www.internetingishard.com/html-and-css/web-typography)	| A friendly tutorial about web fonts.  |
