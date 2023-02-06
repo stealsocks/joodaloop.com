@@ -75,7 +75,7 @@ We can do better. Here are some concrete ways.
 
 ### Local-first software
 
-How do we design softare that depends less on the cloud and gives ownership + control back to users? As a further benefit, apps also get more robust to network failures and collaboration glitches.
+How do we design software that depends less on the cloud and gives ownership + control back to users? As a further benefit, apps also get more robust to network failures and collaboration glitches.
 
 The folks at [Ink & Switch](https://www.inkandswitch.com/) seem to be working at the forefront of this niche. I'd like to know who else is interested in similar ideas.
 
