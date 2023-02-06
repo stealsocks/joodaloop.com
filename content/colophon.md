@@ -134,7 +134,7 @@ Target Audience
 
 People with too much time on their hands.
 
-Or anyone who cares about the web, economics, math, people, ideas, terrible advice, [magic ink](lists/things-i-think-about-often.html#Information%20architecture), or [me](/personal).
+Or anyone who cares about the web, economics, math, people, ideas, terrible advice, [magic ink](/lists/things-i-think-about-often#information-architecture), or [me](/personal).
 
 Etymology
 ---------
