@@ -5,6 +5,7 @@ tags: [hugo, markdown]
 toc: true
 type: "note"
 description: "Notes on all the different forms of design that I care about."
+summary: 31
 ---
 
 I'm no professional. Insofar as I do care about good design, it is for the straightforward purpose of making things that are more beautiful than not. Any rules I have are usually stolen, and weilded lightly. 
@@ -22,7 +23,7 @@ In moments of doubt, I simply return to the question: *"does this look like I wa
 
 1. Point size should be 10–12 points in printed documents, 15-25 pixels on the web.
 2. Line spacing should be 120–145% of the point size.
-3. The average line length should be 45–90 characters (including spaces).
+3. The average line length should be 45–90 characters (including spaces). *In CSS, this is approximately 38rem.*
 4. Put only [one space between sentences](https://practicaltypography.com/one-space-between-sentences.html).
 5. Never choose Times New Roman or Arial, as those fonts are favored only by the apathetic and sloppy.
 

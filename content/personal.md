@@ -11,16 +11,16 @@ margin-right: 1.4rem;" src="/photos/moiblack.jpg">
 </div>
 
 <div id=link-list style="display: inline-block; vertical-align: top; margin-top: -2px"> 
-<a href=""> Twitter </a> <br>
-<a href=""> Are.na </a> <br>
-<a href=""> Github </a> <br>
-<a href=""> Linkbasket </a> <br>
-<a href=""> read.cv </a> <br>
-<a href=""> Email </a> <br>
-<a href=""> Colophon </a> <br>
+<a href="https://twitter.com/joodaloop"> Twitter </a> <br>
+<a href="https://www.are.na/judah"> Are.na </a> <br>
+<a href="https://github.com/stealsocks"> Github </a> <br>
+<a href="https://linkbasket.xyz/joodaloop"> Linkbasket </a> <br>
+<a href="https://read.cv/joodaloop"> read.cv </a> <br>
+<a href="mailto:judah@joodaloop.com"> Email </a> <br>
+<a href="/colophon"> Colophon </a> <br>
 </div>
 
-<h3 style="margin-top: 25px"> WRITING </h3>
+<h3 style="margin-top: 40px; font-weight: 600;"> WRITING </h3>
 
 ---
 
@@ -33,7 +33,8 @@ I have a [newsletter](https://bewrong.substack.com/) that is read by some pretty
 You can browse the longer list of selected writing on the [Essays](/essays) page.
 
 
-### MUSIC
+<h3 style="margin-top: 50px; font-weight: 600;"> MUSIC </h3>
+
 ---
 
 [Four Feet](https://open.spotify.com/track/0ZucC4LM2jpU3bQTbqujhc) is the latest release from [Kitchen Inc.](https://open.spotify.com/artist/3lFcVnOvnxrbW78B25ilQQ) a musical collaboration with one of my friends, most of which happened on an iPad.
@@ -41,7 +42,8 @@ You can browse the longer list of selected writing on the [Essays](/essays) page
 [One Hundred Songs](https://onehundredsongs.netlify.app/) is a more personal attempt at recording 100 instrumental pieces of music. I'm currently at 50/100, after starting in June of 2021.
 
 
-### BUILT
+<h3 style="margin-top: 50px; font-weight: 600;"> BUILT </h3>
+
 ---
 
 I've made some things for the web. And I plan to make a few more.

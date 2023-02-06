@@ -4,3 +4,4 @@ title: "Plans & Ideas"
 description: "Thought bubbles."
 ---
 
+To-do: Import ideas from the previous version of this site.

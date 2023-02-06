@@ -4,6 +4,7 @@ date: 2019-02-14T15:36:09-06:00
 tags: [hugo, markdown]
 toc: true
 description: "Assuming you want to look like an underwear model."
+summary: 19
 ---
 
 I am not a powerlifter. I just happened to be a track-and-field athlete who happened to acheive a physique impressive enough to get requests for advice. So here's what I usually say.

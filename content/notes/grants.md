@@ -5,6 +5,8 @@ tags: [hugo, markdown]
 toc: true
 type: "note"
 description: "Notes on the effectiveness, possibilities and implementations of grant programmes."
+draft: true
+summary: 34
 ---
 
 

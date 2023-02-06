@@ -5,6 +5,7 @@ tags: [hugo, markdown]
 toc: true
 type: "list"
 description: "Running list of my brainworms."
+summary: 29
 ---
 
 

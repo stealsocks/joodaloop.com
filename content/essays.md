@@ -5,4 +5,4 @@ description: "Long-form writing I'm proud of."
 ---
 
 
-To-do: Import essays from [BeWrong](https://bewrong.substack.com) 
+To-do: Import essays from [BeWrong](https://bewrong.substack.com).

@@ -48,7 +48,7 @@ The internet has gotten faster, but average page load times have [stayed the sam
     	</tr>
     	<tr>
 		      <td><a href="https://gtmetrix.com/reports/statuesque-sorbet-f31315.netlify.app/TYWX5SwF/">GTMetrix</a></td>
-		      <td> Grade: A (100% for both performance and structure) </td>
+		      <td> Grade: A (100%) </td>
     	</tr>
     	<tr>
 		      <td><a href="https://www.512kb.club/"> 512kb Club </a></td>
@@ -62,10 +62,7 @@ The internet has gotten faster, but average page load times have [stayed the sam
 
 </table>
 
-
-<!-- It scores a perfect _100_ on [PageSpeed](https://pagespeed.web.dev/report?url=https://joodaloop.com/), and _99/100_ on the [Yellow Lab](https://yellowlab.tools/result/ghj1rut4fo) test. It is also a member of the [512kb club](https://www.512kb.club/), weighing in at 99kb. -->
-
-Pages weigh an average of 15kb, after the fonts have been cached. Thus, the majority of it's load time is taken up by latency, not bandwidth. That, in turn, is minimised using Netlify's global CDN and prefetching/caching.
+Pages weigh an average of 15kb after the fonts have been cached. Thus, the majority of it's load time is taken up by latency, not bandwidth. That, in turn, is minimised using Netlify's global CDN and prefetching/caching.
 
 The average Time to Interactive (fully-loaded page) clocks in at less than 200 milliseconds. 
 

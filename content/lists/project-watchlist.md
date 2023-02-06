@@ -4,6 +4,7 @@ date: 2019-02-14T15:36:09-06:00
 toc: true
 type: "list"
 description: "A list of works-in-progress that I'm excited about."
+summary: 27
 ---
 
 These are projects being worked on by other people, that are sufficiently exciting for me to check up on them often. You might find something here that interests you too.
