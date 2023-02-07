@@ -12,9 +12,9 @@ I'm no professional. Insofar as I do care about good design, it is for the strai
 
 ## Typography
 
-At first glance, it seems like a dry discipline, filled with rather boring rules about line-widths and parargraph spacing. 
+At first glance, it seems like a dry discipline, filled with rather boring rules about line-widths and parargraph spacings. 
 
-But the effect that a simple font change can have remains oft-underrated, and the first step in my process usually involves finding one that fits the vibe of the project. 
+But the effect that a simple font change can have is oft-underrated, and the first step in my process usually involves finding one that fits the vibe of the project. 
 
 
 In moments of doubt, I simply return to the question: *"does this look like I want it to?"*. I'm still not sure about the answer for this site.

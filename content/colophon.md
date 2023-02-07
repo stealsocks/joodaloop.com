@@ -71,7 +71,7 @@ The average Time to Interactive (fully-loaded page) clocks in at less than 200 m
 
 There are annoying bugs that must be dealt with, quality is choosing to care about them.
 
-"But the joy of web design & typography is that just its presentation can matter a little to all your pages." Gwern
+<div class=quote> "But the joy of web design & typography is that just its presentation can matter a little to all your pages." <a href="">Gwern</a> </div>
 
 ### III. Simplicity
 
@@ -136,10 +136,11 @@ People with too much time on their hands.
 
 Or anyone who cares about the web, economics, math, people, ideas, terrible advice, [magic ink](/lists/things-i-think-about-often#information-architecture), or [me](/personal).
 
-Etymology
+<!-- Etymology
 ---------
 
 The site name is . There is a pleasing visual symmetry to it.
+ -->
 
 ## Inspiration {#inspiration}
 
@@ -199,7 +200,7 @@ The design choices and constraints were largely decided by the principles set ou
 
     Check out [Brian's site](https://brianlovin.com/writing/how-my-website-works) for a better example of this, but that's an *actual* Next.js SPA, and requires so much [effort](https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/). 
 
-- **Tools**:
+- **Information hiding**: Hovering over page numbers will reveal the description for that page. Allows me to maintain higher information density alongside the clean book-like look.
 
 ## Media
 
@@ -210,9 +211,13 @@ Images are compressed using [Squoosh](https://squoosh.app) and uploaded directly
 
 ## Fonts
 
-The main font used across this site is [Petrona](https://fonts.google.com/specimen/Petrona?category=Serif&vfonly=true&thickness=5), designed by [Ringo R. Seeber](https://github.com/RingoSeeber/Petrona). It's one of the few fonts that has the full range of possible font-weights, for both italic and normal styles.
+The main font used across this site is [Petrona](https://fonts.google.com/specimen/Petrona), designed by [Ringo R. Seeber](https://github.com/RingoSeeber/Petrona). It's one of the few fonts that has the full range of possible font-weights, for both italic and normal styles.
 
-Font files are served and cached locally as (variable) WOFF2 files. 
+They were [converted](https://henry.codes/writing/how-to-convert-variable-ttf-font-files-to-woff2/) from `.ttf` to `.woff2` files using Google's [woff2 library](https://github.com/google/woff2). This takes the file size from 217kb to ~90kb. 
+
+I then [used](https://lightrun.com/answers/fonttools-fonttools-pyftsubset-gives-missing-glyphs-exception-when-using-single-hyphens-for-cli-args) [pyftsubset](https://clagnut.com/blog/2418) to reduce the number of glyphs to just the [Basic Latin](https://jrgraphix.net/r/Unicode/0020-007F) (0020-007F) and the first half of [General Punctuation](https://jrgraphix.net/r/Unicode/2000-2038) (2000-206F) subsets, which brings them down to ~45kb.
+
+Font files are served and [cached locally](https://stackoverflow.com/questions/52308658/netlify-headers-cache-control-for-static-assets) by Netlify. 
 
 
 ## Analytics

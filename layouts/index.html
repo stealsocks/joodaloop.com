@@ -18,27 +18,10 @@
       @font-face {
         font-family: 'Petrona';
         src: url('fonts/Petrona.woff2') format('woff2');
-         font-display: block;
+         font-display: swap;
          font-weight: 1 999; 
          font-style: normal;
       }
-
-      /*@font-face {
-        font-family: 'Petrona-Italic';
-        font-style: normal;
-        src: url('fonts/Petrona-Italic.woff2') format('woff2');
-         font-display: block;
-         font-style: italic;
-      }*/
-
-      /*.ptserif{
-        font-family: "PT Serif";
-      }*/
-
-/*    
-      .palatino{
-        font-family: "Palatino"
-      }*/
 
       body {
         font-size: 16px;
@@ -49,6 +32,8 @@
         width: 100%;
         opacity: 1;
         transition: opacity 1s ease;
+        font-family: 'Petrona', "Iowan Old Style", "Apple Garamond", "Baskerville", "Times New Roman", "Times", "Source Serif Pro", serif;
+
       }
 
       body.fade{
@@ -76,7 +61,7 @@
       }
 
       h1{
-        font-family: 'Petrona';
+        font-family: inherit;
         text-align: center;
         font-size: 2em;
         padding: 0px;
@@ -133,14 +118,14 @@
       }
 
       .item{
-        font-family: 'Petrona';
+        font-family: inherit;
         font-weight: 300;
         padding: 7px 40px;
         display: block;
       }
 
       .left-item{
-        font-family: 'Petrona';
+        font-family: inherit;
         padding: 7px 0px;
         display: block;
       }
@@ -162,6 +147,14 @@
         color: black;
       }
 
+       .mono{
+      filter: saturate(0%) brightness(50%);
+       text-shadow: 0 0 #dbe2ec;
+       display: inline-block;
+       padding: 5px 9px !important;
+       padding-bottom: 4.34px !important;
+    }
+
       @media only screen and (max-width: 1000px){
         .whitespace{
         width: 0rem;
@@ -173,6 +166,7 @@
 
       .mono{
         font-family: monospace;
+        padding-bottom: 5.3px !important;
       }
       
       }
@@ -320,11 +314,6 @@
         padding: 5px 7px;
         border-radius: 10%;
         z-index: 1;
-    }
-
-    .mono{
-      filter: saturate(0%) brightness(50%);
-       text-shadow: 0 0 #dbe2ec;
     }
 
     .toc-list li > a > .title:hover {
@@ -535,7 +524,7 @@
              <ol role="list">
 
                     <li>
-                        <a href="https://bewrong.substack.com/p/the-problem-of-too-much-money">
+                        <a target="_blank" href="https://bewrong.substack.com/p/the-problem-of-too-much-money">
                             <span class="title">The Problem of Too Much Money<span class="leaders" aria-hidden="true"></span></span> 
                             <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>
@@ -543,7 +532,7 @@
                             <span class=hidden> Yes, it's a real thing. Yes, I wish I had that problem too.</span>
                 </a>
 
-                <a href="https://bewrong.substack.com/p/what-do-ideas-want">
+                <a target="_blank" href="https://bewrong.substack.com/p/what-do-ideas-want">
                             <span class="title">What Do Your Ideas Want From You?<span class="leaders" aria-hidden="true"></span></span> 
                             <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>
@@ -551,14 +540,14 @@
                              <span class=hidden> How are your ideas using you? Do you want them to? </span>
                 </a>
 
-                 <a href="https://bewrong.substack.com/p/form-is-fake">
+                 <a target="_blank" href="https://bewrong.substack.com/p/form-is-fake">
                             <span class="title">Form is Fake<span class="leaders" aria-hidden="true"></span></span> 
                             <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>↗</span>
                                <span class=hidden> A case for rule-skepticism. </span>
                 </a>
 
-                 <a href="https://bewrong.substack.com/p/apologies-and-taste">
+                 <a target="_blank" href="https://bewrong.substack.com/p/apologies-and-taste">
                             <span class="title">Apologies as Signalling<span class="leaders" aria-hidden="true"></span></span> 
                             <span data-href="#Introduction-About-This-Book" class="page mono">
                               <span class="visually-hidden">Page&nbsp;</span>↗</span>
