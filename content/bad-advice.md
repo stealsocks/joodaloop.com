@@ -43,7 +43,7 @@ If you’re young, spend your paychecks immediately. Save like, 10% if you want 
 
 Start a newsletter, intending to publish weekly posts. Instead, only send out writing that you're proud of, and end up publishing once per month (if at all).
 
-<div class=quote> “I write very seldom. I don’t write every day. I’m not someone who just sits down and figures it out...That doesn’t mean I don’t fail, but I do a lot of failing in here. \[Points to head.\] There’s already a lot of drafting in here. I’m just very selective when I actually commit to composition. Once I sit down to write, chances are it’s gonna be something I’m gonna publish.” <a href="https://www.newyorker.com/culture/the-new-yorker-interview/ocean-vuong-is-still-learning">Ocean Vuong</a> </div>
+<div class=quote> “I write very seldom. I don’t write every day. I’m not someone who just sits down and figures it out...That doesn’t mean I don’t fail, but I do a lot of failing in here. [Points to head.] There’s already a lot of drafting in here. I’m just very selective when I actually commit to composition. Once I sit down to write, chances are it’s gonna be something I’m gonna publish.” <a href="https://www.newyorker.com/culture/the-new-yorker-interview/ocean-vuong-is-still-learning">Ocean Vuong</a> </div>
 
 Have a fairly unfiltered anonymous blog, and upload stuff as often as you can. Use something like [write.as](https://write.as) or [Bear Blog](https://bearblog.dev).
 

@@ -64,8 +64,6 @@ The internet has gotten faster, but average page load times have [stayed the sam
 
 Pages weigh an average of 15kb after the fonts have been cached. Thus, the majority of it's load time is taken up by latency, not bandwidth. That, in turn, is minimised using Netlify's global CDN and prefetching/caching.
 
-The average Time to Interactive (fully-loaded page) clocks in at less than 200 milliseconds. 
-
 
 ### II. Thoughtfulness
 
@@ -172,9 +170,14 @@ Stealing ideas for specific elements, data representation, page types, content a
 		      <td><a href="https://aaronzlewis.com/"> Aaron Z. Lewis </a> </td>
 		      <td> The best personal website on the internet, if you ask me. The sheer variety of pages (<a href="https://aaronzlewis.com/starterpack/">starter pack</a>, <a href="https://aaronzlewis.com/cocoon/">cocoon</a>) was most inspiring.</td>
     </tr>
+    <tr>
+		      <td><a href="https://www.zachleat.com"> Zach Leatherman </a> </td>
+		      <td> personality + <a href="https://www.zachleat.com/web/style-guide/">style guide</a> + color usage</td>
+    </tr>
   </tbody>
 
 </table>
+
 
 
 ## Stack
