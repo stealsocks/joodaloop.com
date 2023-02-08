@@ -39,11 +39,11 @@ The internet has gotten faster, but average page load times have [stayed the sam
 		      <td> 100/100</td>
     	</tr>
     	<tr>
-		      <td><a href="https://www.debugbear.com/">DebugBear</a></td>
+		      <td><a href="https://www.debugbear.com/test/website-speed/56BFQUcy/overview">DebugBear</a></td>
 		      <td> Lab score: 100%</td>
     	</tr>
     	<tr>
-		      <td><a href="https://speedvitals.com/">SpeedVitals</a></td>
+		      <td><a href="https://speedvitals.com/report/joodaloop.com/2OYA4U/">SpeedVitals</a></td>
 		      <td> Grade: A (100%) </td>
     	</tr>
     	<tr>
