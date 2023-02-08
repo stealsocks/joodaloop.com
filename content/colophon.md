@@ -16,9 +16,9 @@ I find it easy to make design choices when I've already chosen a set of constrai
 
 The internet has gotten faster, but average page load times have [stayed the same](https://www.nngroup.com/articles/the-need-for-speed/). This kinda sucks, and this site tries to lower that average.
 
-<div class=quote> "[W]hat was the average device in 2016? It sure wasn't a $2,000 M1 MacBook Pro, that's for sure.
+<div class=quote> “What was the average device in 2016? It sure wasn't a $2,000 M1 MacBook Pro, that's for sure.”
 
-No, it was a $600-$700 device. Think (best-case) 2-core, 4-thread married to slow, spinning rust."" <a href="https://infrequently.org/2022/12/performance-baseline-2023/#the-performance-inequality-gap-is-growing">Alex Russell</a></div>
+“No, it was a $600-$700 device. Think (best-case) 2-core, 4-thread married to slow, spinning rust.” <a href="https://infrequently.org/2022/12/performance-baseline-2023/#the-performance-inequality-gap-is-growing">Alex Russell</a> </div>
 
 It tries to achieve an seamless SPA-like user experience while being a collection of regular HTML pages. You can see more about how I achieved this in the [Features](#features) section.
 <table>
@@ -75,7 +75,7 @@ How can I make navigation as seamless as possible? How can I maintain a high lev
 
 There are also annoying bugs and imperfections that will pop up across platforms and viewports, caring for quality means choosing to care about them. It might seem wasteful to put so much effort into tiny details like "should the transition delay on this hover efect be 0.4s or 0.45s?", but I consider it to be reasonable investment.
 
-<div class=quote> "[T]he joy of web design & typography is that just its presentation can matter a little to all your pages." <a href="https://gwern.net/design#benefit">Gwern</a> </div>
+<div class=quote> “The joy of web design & typography is that just its presentation can matter a little to all your pages.” <a href="https://gwern.net/design#benefit">Gwern</a> </div>
 
 
 ### III. Simplicity
