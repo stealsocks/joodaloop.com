@@ -16,6 +16,9 @@ I find it easy to make design choices when I've already chosen a set of constrai
 
 The internet has gotten faster, but average page load times have [stayed the same](https://www.nngroup.com/articles/the-need-for-speed/). This kinda sucks, and this site tries to lower that average.
 
+<div class=quote> That is, what was the average device in 2016? It sure wasn't a $2,000 M1 MacBook Pro, that's for sure.
+
+No, it was a $600-$700 device. Think (best-case) 2-core, 4-thread married to slow, spinning rust. </div>
 
 <table>
   
@@ -47,8 +50,8 @@ The internet has gotten faster, but average page load times have [stayed the sam
 		      <td> Grade: A (100%) </td>
     	</tr>
     	<tr>
-		      <td><a href="https://gtmetrix.com/">GTMetrix</a></td>
-		      <td> Grade: A (100%) </td>
+		      <td><a href="https://gtmetrix.com/reports/joodaloop.com/GO6PsdMd/">GTMetrix</a></td>
+		      <td> Grade: A </td>
     	</tr>
     	<tr>
 		      <td><a href="https://www.512kb.club/"> 512kb Club </a></td>
@@ -75,7 +78,7 @@ There are annoying bugs that must be dealt with, quality is choosing to care abo
 
 Simplicity does not imply minimalism. Nor does it necessarily involve strict rules like "No Javascript or animations!"
 
-The real goal is to have the site be as easy as possible to maintain, modify, and add to. Pick a simple set of guiding rules, and stick by them whenever possible. In my case, this involved picking a single-layer folder heirarchy, basic color palette, one stylesheet, and zero external dependencies.
+The real goal is to have the site be as easy as possible to maintain, modify, and add to. Pick a simple set of guiding rules, and stick by them whenever possible. In my case, this involved picking a single-layer folder heirarchy, basic color palette, one stylesheet, and zero external dependencies or [JS frameworks](https://infrequently.org/2023/02/the-market-for-lemons/).
 
 
 
@@ -183,7 +186,7 @@ Stealing ideas for specific elements, data representation, page types, content a
 ## Stack
 
 
-This site is generated using [Hugo](https:/gohugo.io), chosen for it's speed and feature set. The layout uses a custom theme (that I intend to make open-source in the future) and uses no external libraries or frameworks.
+This site is generated using [Hugo](https:/gohugo.io), chosen for it's [speed](https://www.zachleat.com/web/build-benchmark/) and feature set. The layout uses a custom theme (that I intend to make open-source in the future) and uses no external libraries or frameworks.
 
 | Service | Purpose |
 |-|-|
