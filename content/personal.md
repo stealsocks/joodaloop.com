@@ -6,9 +6,8 @@ personal: "•"
 
 <div 
 id="photo" style="display: inline-block;"> 
-<img style="width: 150px; height: 190px; object-fit: cover; margin-top: 0px; margin-bottom: 15px; position: relative; display: inline-block; 
-/*cursor: url('../photos/moon.png'), auto; */
-margin-right: 1.4rem;" src="/photos/moiblack.jpg">
+<img id=img style="width: 150px; height: 190px; object-fit: cover; margin-top: 0px; margin-bottom: 15px; position: relative; display: inline-block; 
+margin-right: 1.4rem; border: solid 0.7px #666;" src="/photos/moiblack.jpg">
 </div>
 
 <div id=link-list style="display: inline-block; vertical-align: top; margin-top: -2px"> 
@@ -58,3 +57,14 @@ I've made some things for the web. And I plan to make a few more.
 
 *These projects cost me ~$10 a month in server + domain costs, if you'd like to help with those you can like, [buy me a book](https://www.buymeacoffee.com/joodaloop) or become a [regular supporter](https://www.buymeacoffee.com/joodaloop/membership).*
 
+<script>
+	var moi2 = new Image();
+	moi2.src = '/photos/catwhite.jpg';	
+	document.getElementById("img").addEventListener('mouseover', () => { swap("/photos/catwhite.jpg")})
+	document.getElementById("img").addEventListener('mouseleave', () => { swap("/photos/moiblack.jpg")})
+
+	function swap(url){	
+			setTimeout( () => {document.getElementById("img").src = url}, 30 )
+	}
+
+</script>
