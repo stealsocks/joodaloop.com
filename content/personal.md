@@ -56,3 +56,5 @@ I've made some things for the web. And I plan to make a few more.
 [Hypertext as Literature](https://hypertextliterature.netlify.app/) — Some of my favourite internet writing.  
 [Queuest](#) — ...
 
+*These projects cost me ~$10 a month in server + domain costs, if you'd like to help with those you can like, [buy me a book](https://www.buymeacoffee.com/joodaloop) or become a [regular supporter](https://www.buymeacoffee.com/joodaloop/membership).*
+
