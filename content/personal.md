@@ -1,6 +1,7 @@
 ---
 date: "2014-04-09"
 description: "Me, and my stuff."
+personal: "•"
 ---
 
 <div 
@@ -53,5 +54,5 @@ I've made some things for the web. And I plan to make a few more.
 [snowfall.css](https://snowfall.joodaloop.com/) — Add a snowfall (or anything-fall) animation to your webpage.  
 [Linkbasket](https://linkbasket.xyz/) — Create a one-page location for link collections you want to share, with descriptions and topics. Currently in beta.   
 [Hypertext as Literature](https://hypertextliterature.netlify.app/) — Some of my favourite internet writing.  
-[Queuest]() — ...
+[Queuest](#) — ...
 
