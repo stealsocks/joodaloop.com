@@ -172,7 +172,7 @@ Stealing ideas for specific elements, data representation, page types, content a
     </tr>
     <tr>
 		      <td><a href="https://www.zachleat.com"> Zach Leatherman </a> </td>
-		      <td> personality + <a href="https://www.zachleat.com/web/style-guide/">style guide</a> + color usage</td>
+		      <td> <a href="https://www.zachleat.com/web/style-guide/">style guide</a> </td>
     </tr>
   </tbody>
 
