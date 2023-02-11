@@ -14,10 +14,21 @@ But instead, I'll just say that moving to Hugo lets you use any of these themes 
 
 ## collison
 
-A simple [theme](https://github.com/stealsocks/collison) that reproduces Patrick Collison's website design, but with a responsive layout for mobile ([demo](https://collison.netlify.app/)).
+A simple theme that reproduces Patrick Collison's website design, but with a responsive layout for mobile.
+
+**Customizable:** Link (and special link) colors, background, font.  
+
+
+| Source | Demo |
+|-|-|
+| [/collison](https://github.com/stealsocks/collison) | [collison.netlify.app](https://collison.netlify.app/) |
 
 ## Gapat
 
-A [theme](https://github.com/stealsocks/gapat) designed for [@ashishgpt2](https://twitter.com/ashishgpt2/), now available with an MIT license. 
+A theme designed for [@ashishgpt2](https://twitter.com/ashishgpt2/), now available with an MIT license. 
 
-Built for a focus on short, roughly sketched-out notes ([demo](https://gapat.netlify.app/notes/)) instead of chronological blog posts.
+Built with a focus on short, roughly sketched-out notes instead of chronological blog posts.
+
+| Source | Demo |
+|-|-|
+| [/gapat](https://github.com/stealsocks/gapat) | [gapat.netlify.app](https://gapat.netlify.app/notes/) |
