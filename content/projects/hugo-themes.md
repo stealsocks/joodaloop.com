@@ -20,6 +20,7 @@ A simple theme that reproduces Patrick Collison's website design, but with a res
 |-|-|
 | [/collison](https://github.com/stealsocks/collison) | [collison.netlify.app](https://collison.netlify.app/) |
 
+
 ## Gapat
 
 A theme designed for [@ashishgpt2](https://twitter.com/ashishgpt2/), now available with an MIT license. 
