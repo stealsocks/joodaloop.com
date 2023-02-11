@@ -14,13 +14,13 @@ I am not a powerlifter. I just happened to be a track-and-field athlete who happ
 
 **Beginners gains are real.** You can do more than you think in your first three months, don't waste them on bicep curls. Compound movements will have outsized returns when you start out, you don't really need to isolate any muscles yet.
 
-**DOMS is not injury.** You know the pain that starts off 12 hours after you lift really hard, and peaks at around 24? That's Delayed Onset Muscle Soreness. It happens often and is very different from tearing a muscle or bruising. Learn to tell the difference.
+**DOMS is not injury.** You know the pain that starts off 12 hours after you lift really hard, and peaks at around 24? That's [Delayed Onset Muscle Soreness](https://en.wikipedia.org/wiki/Delayed_onset_muscle_soreness). It happens often and is very different from tearing a muscle or bruising. Learn to tell the difference.
 
 **Use the compound lifts.** Start of with something like 1x20 for a couple weeks. You can do other stuff alongside that, but you need to get reps under your belt.
 
 ## High-level beliefs
 
-**You need to be going harder.** Heavier and more, better and smoother. There is no point at which you need to pick a weight adn stick to it. If it's too light, pick up a heavier weight or do more reps than you planned. (I lean towards heavier weight). Ego-lifting isn't real, only strength is.
+**You need to be going harder.** Heavier and more, better and smoother. There is no point at which you need to pick a weight and stick to it. If it's too light, pick up a heavier weight or do more reps than you planned. (I lean towards heavier weight instead of more reps). Ego-lifting isn't real, only strength is.
 
 **Full range-of-motion is underrated.** It will keep you as close to injury-free as possible. First, because full ROM has been shown to benefit strength more than partial ROM. But also because it will keep you humble and prevent you going to weights you're not ready for, while getting as much as you can out of the current ones. Note: Full ROM doesn't always mean you have to work thorugh the entire range, _you can actually get most of the benefits from working at the most extreme end (bottom of a squat, lower half of a press, etc)_.
 
