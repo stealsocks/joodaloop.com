@@ -14,10 +14,7 @@ But instead, I'll just say that moving to Hugo lets you use any of these themes 
 
 ## collison
 
-A simple theme that reproduces Patrick Collison's website design, but with a responsive layout for mobile.
-
-**Customizable:** Link (and special link) colors, background, font.  
-
+A simple theme that reproduces Patrick Collison's website design, but with a responsive layout for mobile and the ability to customize the theme color, background, and font family.
 
 | Source | Demo |
 |-|-|
