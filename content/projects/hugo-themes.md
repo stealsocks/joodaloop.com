@@ -14,7 +14,7 @@ But instead, I'll just say that moving to Hugo lets you use any of these themes 
 
 ## collison
 
-A simple [theme](https://github.com/stealsocks/collison) that reproduces Patrick Collison's website design, but with a responsive layout for mobile.
+A simple [theme](https://github.com/stealsocks/collison) that reproduces Patrick Collison's website design, but with a responsive layout for mobile ([demo](https://collison.netlify.app/)).
 
 ## Gapat
 
