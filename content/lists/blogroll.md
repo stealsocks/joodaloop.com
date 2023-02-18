@@ -62,6 +62,17 @@ summary: 25
       <td><a target="_blank" href="https://eggreport.substack.com/">Egg Report</a></td>
       <td> philosophy, culture, short stories, armchair psychology</td>
 </tr>
+
+<tr>
+      <td><a target="_blank" href="https://eggreport.substack.com/">Sasha Chapin</a></td>
+      <td> philosophy, culture, short stories, armchair psychology</td>
+</tr>
+
+<tr>
+      <td><a target="_blank" href="https://eggreport.substack.com/">On the Spectrum, on the Guest List.</a></td>
+      <td> applied sociology, bangers one-liners</td>
+</tr>
+
 <tr>
       <td><a target="_blank" href="http://mythicalstrength.blogspot.com/">Mythical Strength</a></td>
       <td> lifting, training, rants, raves, getting stronger </td>
@@ -184,7 +195,24 @@ summary: 25
       <td> qualia, cognitive science, consciousness engineering</td>
 </tr>
 
+<tr>
+<td style="width: 100%;" colspan=2> 
+<a href="https://meltingasphalt.com/"> Melting Asphalt </a> •
+<a style="font-weight: 200" href="https://kneelingbus.substack.com/"> Kneeling Bus</a> • 
+<a href="https://buttondown.email/hillelwayne">Computer Things</a> • 
+<a style="font-weight: 200" href="https://erikhoel.substack.com">The Inrinsic Perspective</a> •
+<a href="https://kyla.substack.com/">Kyla Scanlon</a> •
+<a style="font-weight: 200" href=https://moontower.substack.com/>Moontower</a> •
+<a href="https://simonsarris.substack.com\">Simon Sarris</a> •
+<a style="font-weight: 200" href="https://pfeilstorch.substack.com/"> Pfeilstorch </a> •
+<a href="https://subconscious.substack.com/"> Subconscious </a> •
+<a style="font-weight: 200" href="https://thediff.co">The Diff</a> • 
+<a href="https://michaelcurzi.substack.com/">CURZIISM</a> 
 
+</td>
+
+</tr>
   </tbody>
 
-</table>
+</table>  
+
