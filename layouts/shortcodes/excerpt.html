@@ -1,0 +1,12 @@
+
+<div class=excerpt> 
+
+<div class=excerpt-title> <a href='{{ with .Get "link" }}  {{ . }} {{ end }}'> 
+{{ with .Get "title" }}  {{ . }} {{ end }} </a> </div>
+
+
+<div class=excerpt-content> {{ .Inner }} </div>
+
+
+<div class=excerpt-author> <a href='{{ with .Get "link" }}  {{ . }} {{ end }}'> {{ with .Get "author" }}  {{ . }} {{ end }} </a></div>
+</div>
