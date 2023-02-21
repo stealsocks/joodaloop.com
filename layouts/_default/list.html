@@ -1,32 +1,28 @@
 {{ define "main" }}
-<!-- <main id="main">
-  <h1>{{ .Title }}</h1>
-  {{ if site.Params.search }}
-  <input
-    id="search"
-    type="text"
-    placeholder="{{ T "search_placeholder" }}"
-    aria-label="{{ T "search_aria_label" }}"
-  />
-  {{ end }}
-  <ul class="patterns-list" id="list">
-    {{ range .Pages.ByPublishDate.Reverse }}
-    <li>
-      <h2>
-        <a href="{{ .RelPermalink }}">
-          <svg
-            class="bookmark"
-            aria-hidden="true"
-            viewBox="0 0 40 50"
-            focusable="false"
-          >
-            <use href="#bookmark"></use>
-          </svg>
-          {{ .Title }}
-        </a>
-      </h2>
-    </li>
-    {{ end }}
-  </ul> -->
-</main>
+
+<div class=list-section> 
+    <h2> <a href="/" style="text-decoration: none;"> Useful </a></h2>
+
+    <ol class="toc-list" role="list">
+
+          <li>
+             <ol role="list">
+
+                    <li>
+                  {{ range where (where .Site.RegularPages "Type" "useful") "File.Dir" "useful/" }}
+                       <a href="{{ .Permalink }}">
+                            <span class="title">{{.Title}}<span class="leaders" aria-hidden="true"></span></span> 
+                            <span data-href="#Introduction-About-This-Book" class="page">
+                              <span class="visually-hidden">Page&nbsp;</span>
+                            {{.Summary}} </span>
+                            <span class=hidden> {{.Description}} </span>
+                        </a>
+                       {{ end }}  
+              </li>
+              </ol>
+            </li>
+          </ol>
+
+  </div>
+
 {{ end }}
