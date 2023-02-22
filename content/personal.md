@@ -2,22 +2,32 @@
 date: "2014-04-09"
 description: "Me, and my stuff."
 personal: "•"
+toc: true
 ---
+<style>
+.fade-in-image{
+	opacity: 1;
+	transition: all 0.5s cubic-bezier(0, 0, 0.6, 1);
+}
 
-<div 
-id="photo" style="display: inline-block;"> 
+.fade-out-image{
+	opacity: 0;
+}
+
+</style>
+<div id="photo" style="display: inline-block;"> 
 <img id=img style="width: 150px; height: 190px; object-fit: cover; margin-top: 0px; margin-bottom: 15px; position: relative; display: inline-block; 
-margin-right: 1.4rem; border: solid 0.7px #666;" src="/photos/moiblack.jpg">
+margin-right: 1.4rem; border: solid 0.7px #666;" src="/photos/me/moiblack.jpg">
 </div>
 
 <div id=link-list style="display: inline-block; vertical-align: top; margin-top: -2px"> 
-<a href="https://twitter.com/joodaloop"> Twitter </a> <br>
-<a href="https://www.are.na/judah"> Are.na </a> <br>
-<a href="https://github.com/stealsocks"> Github </a> <br>
-<a href="https://linkbasket.xyz/joodaloop"> Linkbasket </a> <br>
-<a href="https://read.cv/joodaloop"> read.cv </a> <br>
-<a href="mailto:judah@joodaloop.com"> Email </a> <br>
-<a href="/colophon"> Colophon </a> <br>
+<a href="https://twitter.com/joodaloop" id=twitter> Twitter </a> <br>
+<a href="https://www.are.na/judah" id=arena> Are.na </a> <br>
+<a href="https://github.com/stealsocks" id=github> Github </a> <br>
+<a href="https://linkbasket.xyz/joodaloop" id=linkbasket> Linkbasket </a> <br>
+<a href="https://read.cv/joodaloop" id=readcv> read.cv </a> <br>
+<a href="mailto:judah@joodaloop.com" id=email> Email </a> <br>
+<a href="/colophon" id=colophon> Colophon </a> <br>
 </div>
 
 <h3 style="margin-top: 40px; font-weight: 600;"> WRITING </h3>
@@ -58,13 +68,32 @@ I've made some things for the web. And I plan to make a few more.
 *These projects cost me ~$10 a month in server + domain costs, if you'd like to help with those you can like, [buy me a book](https://www.buymeacoffee.com/joodaloop) or become a [regular supporter](https://www.buymeacoffee.com/joodaloop/membership).*
 
 <script>
-	var moi2 = new Image();
-	moi2.src = '/photos/catwhite.jpg';	
-	document.getElementById("img").addEventListener('mouseover', () => { swap("/photos/catwhite.jpg")})
-	document.getElementById("img").addEventListener('mouseleave', () => { swap("/photos/moiblack.jpg")})
+	// var moi2 = new Image();
+	// moi2.src = '/photos/catwhite.jpg';	
+	// document.getElementById("github").addEventListener('mouseover', () => { swap("/photos/me/catwhite.jpg")})
+	// document.getElementById("arena").addEventListener('mouseover', () => { swap("/photos/me/arename.jpg")})
+	// document.getElementById("readcv").addEventListener('mouseover', () => { swap("/photos/me/readcvme.jpg")})
+	// document.getElementById("twitter").addEventListener('mouseover', () => { swap("/photos/me/twitterme.jpg")})
+	// document.getElementById("colophon").addEventListener('mouseover', () => { swap("/photos/me/siteme.jpg")})
+	// document.getElementById("img").addEventListener('mouseover', () => { swap("/photos/me/moiblack.jpg")})
+	// document.getElementById("linkbasket").addEventListener('mouseover', () => { swap("/photos/me/linkbasketme.jpg")})
+	// document.getElementById("email").addEventListener('mouseover', () => { swap("/photos/me/moiblack.jpg")})
 
-	function swap(url){	
-			setTimeout( () => {document.getElementById("img").src = url}, 30 )
-	}
+
+	// function swap(url){	
+
+	// 	let src = document.getElementById("img").src
+
+	// 	if(url.substring(url.length-10, url.length-1) != src.substring(src.length-10, src.length-1)){
+
+	// 		document.getElementById("photo").classList.remove("fade-in-image");
+	// 		document.getElementById("photo").classList.add("fade-out-image")
+
+	// 		setTimeout( () => {document.getElementById("img").src = url; 
+	// 			document.getElementById("photo").classList.remove("fade-out-image")
+	// 			document.getElementById("photo").classList.add("fade-in-image");
+	// 			 }, 30)
+	// 	}
+	// }
 
 </script>
