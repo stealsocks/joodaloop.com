@@ -4,6 +4,7 @@ date: 2019-02-14T15:36:09-06:00
 toc: true
 description: "essays, code, tweets, music "
 summary: 15
+draft: true
 ---
 
 This is not supposed to be a guide to writing well, or doing research, or working faster. It is simply a look what my current process looks like most of the time for all the different kinds of writing I dabble in. But maybe it will help you do the former too.
