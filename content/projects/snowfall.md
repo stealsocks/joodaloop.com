@@ -16,3 +16,5 @@ Short script to generate animated falling objects on webpages. Automatically adj
 1. Go to the [snowfall.css](https://snowfall.joodaloop.com/) page.
 2. Choose the shape, color and size and density of your snowflakes. *(Note: You can choose decimal values for the number parameters)*.
 3. Copy the script tag that's generated and paste it into your webpage.
+
+<script snow-color="#666" snow-shape="•" snow-amount="2" snow-size="0.2" src="https://rawcdn.githack.com/stealsocks/snowfall.css/16cee8e4ba02cc5de7d287d0ece7b5b1d12d6cec/snowfall.js"></script>
