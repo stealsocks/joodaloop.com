@@ -945,23 +945,35 @@
   padding: 3px;
   cursor: pointer;
   margin: 0.4rem 0px;
+  position: relative;
   filter: grayscale(1) brightness(105%);
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+
 }
 
 #photos p{
   margin: 0px;
   line-height: 0px;
+
 }
 
 #photos a{
   text-decoration: none;
   font-size: 0px;
+  padding: 10px;
 }
+
 #photos img:hover {
   box-shadow: 0px 0px 15px #aaa;
-  transform: scale(1.01);
+  transform: scale(1.01); 
+  -webkit-transform: scale(1.04, 1.04);
   transition: all 0.3s ease;
   filter: grayscale(0);
+  -webkit-filter: brightness(100%);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
 #photos div{

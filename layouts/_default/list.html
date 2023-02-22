@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class=list-section> 
-    <h2> <a href="/" style="text-decoration: none;"> Useful </a></h2>
+    <h2> <a href="/" style="text-decoration: none;"> {{ .Title }} </a></h2>
 
     <ol class="toc-list" role="list">
 
@@ -9,7 +9,7 @@
              <ol role="list">
 
                     <li>
-                  {{ range where (where .Site.RegularPages "Type" "useful") "File.Dir" "useful/" }}
+                 {{ range where (where .Site.RegularPages "Type" .Params.type ) "File.Dir" .Params.dir }}
                        <a href="{{ .Permalink }}">
                             <span class="title">{{.Title}}<span class="leaders" aria-hidden="true"></span></span> 
                             <span data-href="#Introduction-About-This-Book" class="page">
@@ -17,7 +17,7 @@
                             {{.Summary}} </span>
                             <span class=hidden> {{.Description}} </span>
                         </a>
-                       {{ end }}  
+                       {{ end }} 
               </li>
               </ol>
             </li>
