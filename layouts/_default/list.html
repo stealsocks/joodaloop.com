@@ -8,17 +8,20 @@
           <li>
              <ol role="list">
 
-                    <li>
-                 {{ range where (where .Site.RegularPages "Type" .Params.type ) "File.Dir" .Params.dir }}
+                 {{ range where (where .Site.RegularPages "Type" .Params.listType ) "File.Dir" .Params.dir }}
+                    <li style="margin-bottom: 1em;">
+
                        <a href="{{ .Permalink }}">
                             <span class="title">{{.Title}}<span class="leaders" aria-hidden="true"></span></span> 
                             <span data-href="#Introduction-About-This-Book" class="page">
                               <span class="visually-hidden">Page&nbsp;</span>
                             {{.Summary}} </span>
-                            <span class=hidden> {{.Description}} </span>
+                            <span class=hidden style="max-height:fit-content; opacity:1"> {{.Description}} </span>
                         </a>
-                       {{ end }} 
+
               </li>
+
+                       {{ end }} 
               </ol>
             </li>
           </ol>

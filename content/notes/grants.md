@@ -23,3 +23,5 @@ summary: 34
 ## Who benefits the most from grants?
 
 ## How do you identify talent?
+
+https://salimvirani.com/building-ecosystems-with-grants/

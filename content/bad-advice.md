@@ -7,6 +7,8 @@ description: "You should definitely not do all these things that I've done."
 
 You should definitely not do all these things that I've done. Sasha Chapin has a [similar post](https://sashachapin.substack.com/p/dubious-life-strategies-of-a-dumbass).
 
+<div class="quote"> “Seeking advice is addicting and can become a proxy for action. Giving it can also be addicting in a potentially pretentious, soul-rotting sort of way, and can replace experimenting because you think you know how things work. Be suspicious of lists, advice, and lists of advice.” <a href="">Frank Chimero</a></div>
+
 ## College
 
 Do a humanities or business degree that leaves you with obscene amounts of free time. Then start a band or something.
@@ -65,7 +67,10 @@ Never vote. [It’s not worth it.](https://putanumonit.com/2015/12/30/010-voting
 
 Make a list of movies people have told you to watch, tell people who give you new recommendations that you’ll “add it to the list” and then never use the list.
 
+You can afford to be more confrontational than you think, as long as you're smooth with it. There is confrontation for the sake of confrontation, and then there's a genuine concern/curiosity that is often not acted upon. The tricky bit is making sure the latter doesn't feel like the former. 
+
 Never get 8 hours of sleep, [you don't need it](http://mythicalstrength.blogspot.com/2021/01/things-that-are-and-are-not-important.html) if most of your day is just spent sitting around.
+
 
 ## Productivity
 

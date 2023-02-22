@@ -8,6 +8,7 @@ summary: 25
 ---
 
 
+The writers in this list are people who's writing I am always excited to recieve new installments of.
 
 <table>
 	 <!-- <caption>
@@ -101,7 +102,7 @@ summary: 25
 </tr>
 
 <tr>
-      <td><a target="_blank" href="https://drmaciver.substack.com/">Overthinking Everything</a></td>
+      <td><a target="_blank" href="https://drmaciver.substack.com/">Overthinking Everything</a> + <a href="https://notebook.drmaciver.com"> Notebook</a></td>
       <td> good advice, thinking, estimation, being human </td>
 </tr>
 
@@ -207,7 +208,12 @@ summary: 25
 <a style="font-weight: 200" href="https://pfeilstorch.substack.com/"> Pfeilstorch </a> •
 <a href="https://subconscious.substack.com/"> Subconscious </a> •
 <a style="font-weight: 200" href="https://thediff.co">The Diff</a> • 
-<a href="https://michaelcurzi.substack.com/">CURZIISM</a> 
+<a href="https://michaelcurzi.substack.com/">CURZIISM</a> •
+<a style="font-weight: 200" href="https://visakanv.substack.com">visakanv</a> •
+<a href="https://gwern.net/"> Gwern </a> •
+<a style="font-weight: 200" href="https://sympatheticopposition.substack.com/">sympathetic opposition</a> •
+<a href="https://scholars-stage.org/"> The Scholar's Stage </a>
+
 
 </td>
 

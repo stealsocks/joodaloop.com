@@ -4,12 +4,12 @@ date: 2019-02-14T15:36:09-06:00
 toc: true
 type: "list"
 description: "A list of works-in-progress that I'm excited about."
-summary: 27
+summary: 26
 ---
 
 These are projects being worked on by other people, that are sufficiently exciting for me to check up on them often. You might find something here that interests you too.
 
-[Frontier Markets Institute](https://www.frontiermarkets.institute/) — A think tank dedicated to accelerating the development of frontier markets across the globe.
+[Frontier Markets Institute](https://www.frontiermarkets.institute/) — A think tank dedicated to accelerating the development of frontier markets across the globe. ([Internship programme](https://www.frontiermarkets.institute/post/internship)).
 
 [Playbit](https://playb.it/) — A DOM-like data structure for building collaborative software that works just as well while connected to the Internet as when running offline locally.
 
