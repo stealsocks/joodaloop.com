@@ -114,7 +114,7 @@ h2{
 Some of these ideas are for improving things. Some are for making things worse. I'm not going to tell you which ones are which.
 
 Some of these plans seem pretty sensible. Some seem kinda ridiculous. The latter ones are the plans I take most seriously.  
-
+<!-- 
 ## Internet Libraries
 
 <div class=box>
@@ -124,7 +124,7 @@ Tom Critchlow explores these ideas (and what such tools would look like) better 
 
 <p class=date> 29th January 2023 </p>
 </div>
-
+ -->
 
 ## Public letters
 
@@ -138,7 +138,7 @@ All mediums have their constraints, whether they be essays, tweets or full-lengt
 <p class=date> 27th January 20223 </p>
 </div>
 
-
+<!-- 
 ## Trainable
 
 <div class=box>
@@ -152,7 +152,9 @@ Operations seems like a pariticularly salient example here. It might just be tha
 
 <p class=date> 12th January 2023 </p>
 </div>
+ -->
 
+ <!-- 
 ## After newsletters
 
 <div class=box>
@@ -173,7 +175,8 @@ How do you create better ways to sort, read and triage email? How do you priorit
 
 <p class=date> 6th January 2023 </p>
 </div>
-
+ -->
+ <!-- 
 ## Working styles
 
 <div class=box>
@@ -186,7 +189,7 @@ Some people want to sleep in the office. Others. Some only start functioning pas
 So far, the way to do deal with has been "suck it up, wuss". Which is fair, employers want a dependable team.
 
 <p class=date> 3rd January 2023 </p>
-</div>
+</div> -->
 
 ## Everything I Know
 

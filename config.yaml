@@ -2,7 +2,6 @@ baseURL: "/"
 languageCode: en-us
 defaultContentLanguage: en
 title: Joodaloop
-theme: cupper-hugo-theme
 googleAnalytics: UA-123456789-1
 enableGitInfo: true
 
