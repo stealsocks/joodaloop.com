@@ -63,7 +63,7 @@ I've made some things for the web. And I plan to make a few more.
 [snowfall.css](https://snowfall.joodaloop.com/) — Add a snowfall (or anything-fall) animation to your webpage.  
 [Linkbasket](https://linkbasket.xyz/) — Create a one-page location for link collections you want to share, with descriptions and topics. Currently in beta.   
 [Hypertext as Literature](https://hypertextliterature.netlify.app/) — Some of my favourite internet writing.  
-[Queuest](#) — ...
+[Stream](#) — ...
 
 *These projects cost me ~$10 a month in server + domain costs, if you'd like to help with those you can like, [buy me a book](https://www.buymeacoffee.com/joodaloop) or become a [regular supporter](https://www.buymeacoffee.com/joodaloop/membership).*
 
